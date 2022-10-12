@@ -83,7 +83,18 @@ function Spotlight() {
           </LeftContainerBottom>
         </LeftContainer>
       </LeftAside>
-      <MidSection>middle</MidSection>
+      <MidSection>
+        <MiddleContainer>
+          <Form>
+            <Input type="text" placeholder="Search" />
+            <SearchImageContainer>
+              <SearchImage
+                src={require("../assets/images/search.svg").default}
+              />
+            </SearchImageContainer>
+          </Form>
+        </MiddleContainer>
+      </MidSection>
       <RightAside>right</RightAside>
     </SpotlightContainer>
   );
@@ -204,8 +215,37 @@ const ArrowImage = styled.img`
   transform: rotate(270deg);
 `;
 
+// LeftAside section completed//
+
 const MidSection = styled.div`
   width: 45%;
+  padding: 32px 40px;
+`;
+
+const MiddleContainer = styled.div``;
+
+const Form = styled.form`
+  background: #d9d9d9;
+  border-radius: 14px;
+  padding: 13px 18px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Input = styled.input`
+  font-size: 17px;
+  font-weight: 500;
+`;
+
+const SearchImageContainer = styled.span`
+  width: 24px;
+`;
+
+const SearchImage = styled.img`
+  width: 100%;
+  display: block;
 `;
 
 const RightAside = styled.div`
