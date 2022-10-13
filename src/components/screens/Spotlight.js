@@ -185,6 +185,117 @@ function Spotlight() {
             </CartArrowImageContainer>
           </CartRight>
         </CartContainer>
+        <ProductContainer>
+          <ProductLeftHeading>Hot SellingProducts</ProductLeftHeading>
+          <ProductRightHeading>See all</ProductRightHeading>
+        </ProductContainer>
+        <RightAsideItemContainer>
+          <RIghtItemContainer>
+            <ItemLeftDiv>
+              <RightAsideImageBox>
+                <RightAsideImage
+                  src={require("../assets/images/wood-books.jpg")}
+                />
+              </RightAsideImageBox>
+              <RightItemDetailsBox>
+                <RightAsideItemName>
+                  Dominoes Coffee Table Game
+                </RightAsideItemName>
+                <RightAsideItemSale> 50k Sales</RightAsideItemSale>
+              </RightItemDetailsBox>
+            </ItemLeftDiv>
+            <ItemRightDiv>
+              <RightItemPrice>$30</RightItemPrice>
+            </ItemRightDiv>
+          </RIghtItemContainer>
+          <RIghtItemContainer>
+            <ItemLeftDiv>
+              <RightAsideImageBox>
+                <RightAsideImage
+                  src={require("../assets/images/black-box.jpg")}
+                />
+              </RightAsideImageBox>
+              <RightItemDetailsBox>
+                <RightAsideItemName>
+                  Photive Wireless Speakers
+                </RightAsideItemName>
+                <RightAsideItemSale> 44k Sales</RightAsideItemSale>
+              </RightItemDetailsBox>
+            </ItemLeftDiv>
+            <ItemRightDiv>
+              <RightItemPrice>$19</RightItemPrice>
+            </ItemRightDiv>
+          </RIghtItemContainer>
+          <RIghtItemContainer>
+            <ItemLeftDiv>
+              <RightAsideImageBox>
+                <RightAsideImage
+                  src={require("../assets/images/speaker.jpg")}
+                />
+              </RightAsideImageBox>
+              <RightItemDetailsBox>
+                <RightAsideItemName>
+                  Urbanears Lotson Speaker
+                </RightAsideItemName>
+                <RightAsideItemSale>42k Sales</RightAsideItemSale>
+              </RightItemDetailsBox>
+            </ItemLeftDiv>
+            <ItemRightDiv>
+              <RightItemPrice>$79</RightItemPrice>
+            </ItemRightDiv>
+          </RIghtItemContainer>
+          <RIghtItemContainer>
+            <ItemLeftDiv>
+              <RightAsideImageBox>
+                <RightAsideImage
+                  src={require("../assets/images/headphones 1.jpg")}
+                />
+              </RightAsideImageBox>
+              <RightItemDetailsBox>
+                <RightAsideItemName>Platttan 2 Headphones</RightAsideItemName>
+                <RightAsideItemSale> 38k Sales</RightAsideItemSale>
+              </RightItemDetailsBox>
+            </ItemLeftDiv>
+            <ItemRightDiv>
+              <RightItemPrice>$35</RightItemPrice>
+            </ItemRightDiv>
+          </RIghtItemContainer>
+          <RIghtItemContainer>
+            <ItemLeftDiv>
+              <RIghtItemContainer>
+                <ItemLeftDiv>
+                  <RightAsideImageBox>
+                    <RightAsideImage
+                      src={require("../assets/images/radio.jpg")}
+                    />
+                  </RightAsideImageBox>
+                  <RightItemDetailsBox>
+                    <RightAsideItemName>
+                      Solar Hand Crank Radio
+                    </RightAsideItemName>
+                    <RightAsideItemSale> 30k Sales</RightAsideItemSale>
+                  </RightItemDetailsBox>
+                </ItemLeftDiv>
+              </RIghtItemContainer>
+            </ItemLeftDiv>
+            <ItemRightDiv>
+              <RightItemPrice>$30</RightItemPrice>
+            </ItemRightDiv>
+          </RIghtItemContainer>
+        </RightAsideItemContainer>
+        <RightAsideBottomContainer>
+          <HelpComment>
+            What can we help <br /> you with?
+          </HelpComment>
+          <ChatContainer>
+            <CommentBox>
+              <Comment>Chat with us</Comment>
+              <CommentArrowContainer>
+                <CommentArrowImage src={require("../assets/images/down-ar")} />
+              </CommentArrowContainer>
+            </CommentBox>
+          </ChatContainer>
+        </RightAsideBottomContainer>
       </RightAside>
     </SpotlightContainer>
   );
@@ -498,13 +609,14 @@ const MidRightImage = styled.img`
 const RightAside = styled.div`
   background: #f1f1f3;
   width: 35%;
-  padding: 30px;
+  padding: 35px 30px 30px 58px;
 `;
 
 const CartContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 56px;
 `;
 
 const CartLeft = styled.div`
@@ -568,3 +680,58 @@ const CartArrowImage = styled.img`
   width: 100%;
   display: block;
 `;
+
+const ProductContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+`;
+const ProductLeftHeading = styled.h4`
+  font-size: 22px;
+  font-weight: 600;
+`;
+const ProductRightHeading = styled.h4`
+  font-size: 13px;
+  font-weight: 600;
+`;
+
+const RightAsideItemContainer = styled.ul``;
+
+const RIghtItemContainer = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+`;
+const ItemLeftDiv = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const RightAsideImageBox = styled.span`
+  display: inline-block;
+  width: 80px;
+  margin-right: 18px;
+`;
+const RightAsideImage = styled.img`
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+`;
+const RightItemDetailsBox = styled.div``;
+
+const RightAsideItemName = styled.h4`
+  font-size: 16px;
+  font-weight: 600;
+`;
+const RightAsideItemSale = styled.span`
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+`;
+const ItemRightDiv = styled.div``;
+const RightItemPrice = styled.span`
+  display: inline-block;
+  font-weight: 600;
+`;
+
