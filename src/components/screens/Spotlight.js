@@ -161,7 +161,31 @@ function Spotlight() {
 
       {/* middle section completed */}
 
-      <RightAside>right</RightAside>
+      <RightAside>
+        <CartContainer>
+          <CartLeft>
+            <OrangeRound>6</OrangeRound>
+            <BellImageContainer>
+              <BellImage src={require("../assets/images/bell.svg").default} />
+            </BellImageContainer>
+            <MessageImageContainer>
+              <MessageImage
+                src={require("../assets/images/chat.svg").default}
+              />
+            </MessageImageContainer>
+          </CartLeft>
+          <CartRight>
+            <BoyImageContainer>
+              <BoyImage src={require("../assets/images/boy.jpg")} />
+            </BoyImageContainer>
+            <CartArrowImageContainer>
+              <CartArrowImage
+                src={require("../assets/images/down-arrow.svg").default}
+              />
+            </CartArrowImageContainer>
+          </CartRight>
+        </CartContainer>
+      </RightAside>
     </SpotlightContainer>
   );
 }
@@ -469,7 +493,78 @@ const MidRightImage = styled.img`
   display: block;
 `;
 
+// middle section completed
+
 const RightAside = styled.div`
   background: #f1f1f3;
   width: 35%;
+  padding: 30px;
+`;
+
+const CartContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const CartLeft = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+`;
+
+const OrangeRound = styled.div`
+  position: absolute;
+  border-radius: 50%;
+  background: #f99177;
+  padding: 2px 6px;
+  height: 18px;
+  font-size: 11px;
+  top: -8px;
+  right: 43px;
+`;
+
+const BellImageContainer = styled.span`
+  display: inline-block;
+  width: 20px;
+  margin-right: 24px;
+`;
+const BellImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+
+const MessageImageContainer = styled.span`
+  display: inline-block;
+  width: 25px;
+`;
+const MessageImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+
+const CartRight = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const BoyImageContainer = styled.span`
+  display: inline-block;
+  width: 38px;
+  margin-right: 12px;
+`;
+const BoyImage = styled.img`
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+`;
+
+const CartArrowImageContainer = styled.span`
+  display: inline-block;
+  width: 20px;
+`;
+const CartArrowImage = styled.img`
+  width: 100%;
+  display: block;
 `;
