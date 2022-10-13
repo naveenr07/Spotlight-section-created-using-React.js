@@ -106,7 +106,61 @@ function Spotlight() {
             </MonthArrowImage>
           </MonthBox>
         </StaticContainer>
+        <ThreeImageContainer>
+          <DoubleImageContainer>
+            <PinkContainer>
+              <PinkImageContainer>
+                <PinkImage
+                  src={require("../assets/images/vehicle.svg").default}
+                />
+              </PinkImageContainer>
+              <PinkDelivery>Awaiting Delivery</PinkDelivery>
+              <PinkOrder>150k Orders</PinkOrder>
+            </PinkContainer>
+            <BlueContainer>
+              <BlueImageContainer>
+                <BlueImage
+                  src={require("../assets/images/vehicle.svg").default}
+                />
+              </BlueImageContainer>
+              <BlueDelivery>Awaiting Delivery</BlueDelivery>
+              <BlueOrder>150k Orders</BlueOrder>
+            </BlueContainer>
+          </DoubleImageContainer>
+          <BlueGraphImageContainer>
+            <BlueGraphImage
+              src={require("../assets/images/graph-blue.svg").default}
+            />
+          </BlueGraphImageContainer>
+        </ThreeImageContainer>
+        <MidBottomContainer>
+          <MidLeftBox>
+            <MidLeftHeading>
+              Create Ads for Your <br />
+              Business
+            </MidLeftHeading>
+            <MidLeftImageContainer>
+              <MidLeftImage
+                src={require("../assets/images/admin.svg").default}
+              />
+            </MidLeftImageContainer>
+          </MidLeftBox>
+          <MidRightBox>
+            <MidRightHeading>
+              Secure Your <br />
+              Payments
+            </MidRightHeading>
+            <MidRightImageContainer>
+              <MidRightImage
+                src={require("../assets/images/businessman-single.svg").default}
+              />
+            </MidRightImageContainer>
+          </MidRightBox>
+        </MidBottomContainer>
       </MidSection>
+
+      {/* middle section completed */}
+
       <RightAside>right</RightAside>
     </SpotlightContainer>
   );
@@ -266,6 +320,7 @@ const StaticContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 30px;
 `;
 
 const StaticHeading = styled.h5`
@@ -291,6 +346,125 @@ const MonthArrowImage = styled.span`
 `;
 
 const ArrowDownImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+
+const ThreeImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+`;
+const DoubleImageContainer = styled.div`
+  width: 48%;
+`;
+const PinkContainer = styled.div`
+  background: #f4e7e5;
+  margin-bottom: 24px;
+  height: 165px;
+  border-radius: 12px;
+  padding: 20px;
+`;
+const PinkImageContainer = styled.span`
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 50px;
+`;
+const PinkImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+const PinkDelivery = styled.h6`
+  font-weight: 600;
+  font-size: 18px;
+`;
+const PinkOrder = styled.h4`
+  font-weight: 600;
+  font-size: 24px;
+`;
+
+const BlueContainer = styled.div`
+  background: #e6f4ff;
+  height: 165px;
+  border-radius: 12px;
+  padding: 20px;
+`;
+const BlueImageContainer = styled.span`
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 50px;
+`;
+const BlueImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+const BlueDelivery = styled.h6`
+  font-weight: 600;
+  font-size: 18px;
+`;
+const BlueOrder = styled.h4`
+  font-weight: 600;
+  font-size: 24px;
+`;
+
+const BlueGraphImageContainer = styled.div`
+  width: 48%;
+  display: block;
+`;
+const BlueGraphImage = styled.img`
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+`;
+
+const MidBottomContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const MidLeftBox = styled.div`
+  width: 30%;
+`;
+
+const MidLeftHeading = styled.h5`
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+`;
+
+const MidLeftImageContainer = styled.div`
+  display: block;
+  width: 100px;
+`;
+
+const MidLeftImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+
+const MidRightBox = styled.div`
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
+`;
+
+const MidRightHeading = styled.h5`
+  font-size: 18px;
+  font-weight: 600;
+`;
+
+const MidRightImageContainer = styled.div`
+  display: block;
+  width: 130px;
+`;
+
+const MidRightImage = styled.img`
   width: 100%;
   display: block;
 `;
