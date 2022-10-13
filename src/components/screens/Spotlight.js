@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 function Spotlight() {
   return (
@@ -13,7 +14,8 @@ function Spotlight() {
           <LeftContainerTop>
             <ItemContainer>
               <ItemBox>
-                <Items>
+                {" "}
+                <Items to={"/summary"}>
                   <ItemName>Summary</ItemName>
                   <ItemImageContainer>
                     <ItemImage
@@ -21,7 +23,7 @@ function Spotlight() {
                     />
                   </ItemImageContainer>
                 </Items>
-                <Items>
+                <Items to={"/product"}>
                   <ItemName>Products</ItemName>
                   <ItemImageContainer>
                     <ItemImage
@@ -29,7 +31,7 @@ function Spotlight() {
                     />
                   </ItemImageContainer>
                 </Items>{" "}
-                <Items>
+                <Items to={"/hotselling"}>
                   <ItemName>Hot Selling</ItemName>
                   <ItemImageContainer>
                     <ItemImage
@@ -37,7 +39,7 @@ function Spotlight() {
                     />
                   </ItemImageContainer>
                 </Items>{" "}
-                <Items>
+                <Items to={"/order"}>
                   <ItemName>Manage Order</ItemName>
                   <ItemImageContainer>
                     <ItemImage
@@ -45,7 +47,7 @@ function Spotlight() {
                     />
                   </ItemImageContainer>
                 </Items>{" "}
-                <Items>
+                <Items to={"/payment"}>
                   <ItemName>Payments</ItemName>
                   <ItemImageContainer>
                     <ItemImage
@@ -53,8 +55,8 @@ function Spotlight() {
                     />
                   </ItemImageContainer>
                 </Items>
-                <Items>
-                  <ItemName>Settings</ItemName>
+                <Items to={"/settings"}>
+                  <ItemName>settings</ItemName>
                   <ItemImageContainer>
                     <ItemImage
                       src={require("../assets/images/settings.svg").default}
@@ -344,7 +346,8 @@ const ItemName = styled.h6`
 
 const ItemContainer = styled.div``;
 const ItemBox = styled.ul``;
-const Items = styled.li`
+
+const Items = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -704,13 +707,19 @@ const ProductRightHeading = styled.h4`
   font-weight: 600;
 `;
 
-const RightAsideItemContainer = styled.ul``;
+const RightAsideItemContainer = styled.ul`
+  margin-bottom: 28px;
+`;
 
 const RIghtItemContainer = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 const ItemLeftDiv = styled.div`
   display: flex;
@@ -759,7 +768,7 @@ const CommentBox = styled.div`
   display: flex;
   align-items: center;
 `;
-const Comment = styled.h6`
+const Comment = styled.a`
   font-size: 14px;
   font-weight: 600;
   color: #3d438e;
