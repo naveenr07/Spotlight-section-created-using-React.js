@@ -96,7 +96,15 @@ function Spotlight() {
           </Form>
         </MiddleFormContainer>
         <StaticContainer>
-          <StaticHeading></StaticHeading>
+          <StaticHeading>Statistics</StaticHeading>
+          <MonthBox>
+            <MonthCount>6 Months</MonthCount>
+            <MonthArrowImage>
+              <ArrowDownImage
+                src={require("../assets/images/down-arrow.svg").default}
+              />
+            </MonthArrowImage>
+          </MonthBox>
         </StaticContainer>
       </MidSection>
       <RightAside>right</RightAside>
@@ -232,10 +240,11 @@ const Form = styled.form`
   background: #d9d9d9;
   border-radius: 14px;
   padding: 13px 18px;
-  height: 55px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 `;
 
 const Input = styled.input`
@@ -249,6 +258,39 @@ const SearchImageContainer = styled.span`
 `;
 
 const SearchImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+
+const StaticContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const StaticHeading = styled.h5`
+  font-weight: 600;
+  font-size: 24px;
+`;
+
+const MonthBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const MonthCount = styled.span`
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 12px;
+`;
+
+const MonthArrowImage = styled.span`
+  display: inline-block;
+  width: 20px;
+`;
+
+const ArrowDownImage = styled.img`
   width: 100%;
   display: block;
 `;
