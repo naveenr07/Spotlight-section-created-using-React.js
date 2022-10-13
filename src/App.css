@@ -19,7 +19,7 @@ del {
   text-decoration: line-through;
 }
 body {
-  font-family: "product_sans_bold", Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
   font-size: 16px;
   color: #1c2c40;
   overflow-x: hidden;
@@ -29,13 +29,13 @@ body {
 input,
 textarea,
 select {
-  font-family: "product_sans_regular", Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
   font-weight: 400;
 }
 
 a {
   color: #707070;
-  font-family: "product_sans_regular", sans-serif;
+  font-family: "Poppins";
   font-weight: 500;
   font-size: 18px;
 }
@@ -61,7 +61,7 @@ p {
   font-size: 17px;
   font-weight: 400;
   color: #707070;
-  font-family: "product_sans_regular", sans-serif;
+  font-family: "Poppins";
 }
 .hidden {
   display: none;
@@ -70,10 +70,11 @@ br.clear {
   clear: both;
   line-height: 0;
 }
+
 @font-face {
   font-family: "Poppins";
-  src: url("./components/assets/fonts/Poppins-Bold.woff2") format("woff2"),
-    url("./components/assets/fonts/Poppins-Bold.woff") format("woff");
+  src: url("./components/assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("./components/assets/fonts/Poppins-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -81,8 +82,8 @@ br.clear {
 
 @font-face {
   font-family: "Poppins";
-  src: url("./components/assets/fonts/Poppins-Bold.woff2") format("woff2"),
-    url("./components/assets/fonts/Poppins-Bold.woff") format("woff");
+  src: url("./components/assets/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("./components/assets/fonts/Poppins-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

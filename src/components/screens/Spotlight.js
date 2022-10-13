@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../../App.css";
 
 function Spotlight() {
   return (
@@ -84,16 +85,19 @@ function Spotlight() {
         </LeftContainer>
       </LeftAside>
       <MidSection>
-        <MiddleContainer>
+        <MiddleFormContainer>
           <Form>
-            <Input type="text" placeholder="Search" />
+            <Input type="text" placeholder="Search here" />
             <SearchImageContainer>
               <SearchImage
                 src={require("../assets/images/search.svg").default}
               />
             </SearchImageContainer>
           </Form>
-        </MiddleContainer>
+        </MiddleFormContainer>
+        <StaticContainer>
+          <StaticHeading></StaticHeading>
+        </StaticContainer>
       </MidSection>
       <RightAside>right</RightAside>
     </SpotlightContainer>
@@ -110,7 +114,7 @@ const SpotlightContainer = styled.div`
 `;
 
 const LeftAside = styled.div`
-  border-right: 2px solid #f1f1f3;
+  border-right: 2px solid #d9d9d9;
   width: 20%;
 `;
 
@@ -120,7 +124,7 @@ const LeftContainer = styled.div`
 const LogoContainer = styled.div`
   display: block;
   width: 140px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 `;
 const Logo = styled.img`
   display: block;
@@ -130,8 +134,8 @@ const Logo = styled.img`
 const LeftContainerTop = styled.div``;
 
 const ItemName = styled.h6`
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
 `;
 
 const ItemContainer = styled.div``;
@@ -141,7 +145,7 @@ const Items = styled.li`
   align-items: center;
   justify-content: space-between;
   color: #867f7f;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 
   &:first-child {
     color: #323989;
@@ -161,7 +165,7 @@ const ItemImage = styled.img`
 `;
 
 const LeftContainerBottom = styled.div`
-  height: 480px;
+  height: 465px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -206,7 +210,7 @@ const ArrowImageContainer = styled.span`
   display: inline-block;
   width: 10px;
   position: absolute;
-  top: 191px;
+  top: 198px;
   right: 58px;
 `;
 const ArrowImage = styled.img`
@@ -222,7 +226,7 @@ const MidSection = styled.div`
   padding: 32px 40px;
 `;
 
-const MiddleContainer = styled.div``;
+const MiddleFormContainer = styled.div``;
 
 const Form = styled.form`
   background: #d9d9d9;
@@ -235,8 +239,9 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ada9a9;
 `;
 
 const SearchImageContainer = styled.span`
