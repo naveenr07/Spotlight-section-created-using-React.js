@@ -291,9 +291,16 @@ function Spotlight() {
             <CommentBox>
               <Comment>Chat with us</Comment>
               <CommentArrowContainer>
-                <CommentArrowImage src={require("../assets/images/down-ar")} />
+                <CommentArrowImage
+                  src={require("../assets/images/down-arrow2.svg").default}
+                />
               </CommentArrowContainer>
             </CommentBox>
+            <ChatRightImageContainer>
+              <ChatRightImage
+                src={require("../assets/images/businessman-2.svg").default}
+              />
+            </ChatRightImageContainer>
           </ChatContainer>
         </RightAsideBottomContainer>
       </RightAside>
@@ -395,7 +402,7 @@ const H3Container = styled.h3`
 
 const Button = styled.button`
   color: #fff;
-  padding: 9px 40px;
+  padding: 11px 40px;
   border-radius: 10px;
   background: #323989;
   display: inline-block;
@@ -568,7 +575,7 @@ const MidLeftBox = styled.div`
 const MidLeftHeading = styled.h5`
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 `;
 
 const MidLeftImageContainer = styled.div`
@@ -579,6 +586,7 @@ const MidLeftImageContainer = styled.div`
 const MidLeftImage = styled.img`
   width: 100%;
   display: block;
+  margin-left: 40px;
 `;
 
 const MidRightBox = styled.div`
@@ -609,7 +617,7 @@ const MidRightImage = styled.img`
 const RightAside = styled.div`
   background: #f1f1f3;
   width: 35%;
-  padding: 35px 30px 30px 58px;
+  padding: 38px 30px 11px 58px;
 `;
 
 const CartContainer = styled.div`
@@ -735,3 +743,42 @@ const RightItemPrice = styled.span`
   font-weight: 600;
 `;
 
+const RightAsideBottomContainer = styled.div`
+  padding: 10px;
+`;
+const HelpComment = styled.h3`
+  font-size: 20px;
+  font-weight: 600;
+`;
+const ChatContainer = styled.div`
+  display: flex;
+  align-content: center;
+`;
+
+const CommentBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Comment = styled.h6`
+  font-size: 14px;
+  font-weight: 600;
+  color: #3d438e;
+`;
+const CommentArrowContainer = styled.div`
+  display: inline-block;
+  transform: rotate(270deg);
+  width: 20px;
+  margin-right: 100px;
+`;
+const CommentArrowImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+const ChatRightImageContainer = styled.span`
+  display: inline-block;
+  width: 140px;
+`;
+const ChatRightImage = styled.img`
+  width: 100%;
+  display: block;
+`;
