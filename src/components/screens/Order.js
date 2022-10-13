@@ -1,12 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 function Order() {
   return (
-    <OrderContainer>
-      <Name>MANAGE ORDER</Name>
-      <Image src={require("../assets/images/order.jpg")} />
-    </OrderContainer>
+    <>
+      {" "}
+      <Helmet>
+        <title> Manage Orders</title>
+      </Helmet>
+      <OrderContainer>
+        <OrderTitle>MANAGE ORDERS</OrderTitle>
+        <OrderBody>
+          <OrderImage src={require("../assets/images/order.jpg")} />
+        </OrderBody>
+      </OrderContainer>
+    </>
   );
 }
 
@@ -14,18 +23,22 @@ export default Order;
 
 const OrderContainer = styled.div`
   padding: 30px;
-  background: #f55718;
+  background: #000047;
+`;
+const OrderTitle = styled.h1`
   text-align: center;
-`;
-
-const Name = styled.h1`
-  font-size: 24px;
   color: #fff;
-  font-weight: 600;
   font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
 `;
-
-const Image = styled.img`
+const OrderBody = styled.div`
+  display: block;
+  width: 630px;
+  height: 619px;
+  margin: 0 auto;
+`;
+const OrderImage = styled.img`
   width: 100%;
   display: block;
   border-radius: 20px;

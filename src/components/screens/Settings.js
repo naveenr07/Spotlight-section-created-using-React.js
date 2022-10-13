@@ -1,14 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 function Setting() {
   return (
-    <SettingContainer>
-      <SettingTitle>Setting</SettingTitle>
-      <SettingBody>
-        {/* <SettingImage src={require("../assets/images/setting0.jpg")} /> */}
-      </SettingBody>
-    </SettingContainer>
+    <>
+      <Helmet>
+        <title>Settings</title>
+      </Helmet>
+      <SettingContainer>
+        <SettingTitle>SETTINGS</SettingTitle>
+        <SettingBody>
+          <SettingImage src={require("../assets/images/settings.jpg")} />
+        </SettingBody>
+      </SettingContainer>
+    </>
   );
 }
 
@@ -16,7 +22,7 @@ export default Setting;
 
 const SettingContainer = styled.div`
   padding: 30px;
-  background: #cdb8e0;
+  background: #8dc73f;
 `;
 const SettingTitle = styled.h1`
   text-align: center;
@@ -27,6 +33,9 @@ const SettingTitle = styled.h1`
 `;
 const SettingBody = styled.div`
   display: block;
+  width: 692px;
+  height: 619px;
+  margin: 0 auto;
 `;
 const SettingImage = styled.img`
   width: 100%;

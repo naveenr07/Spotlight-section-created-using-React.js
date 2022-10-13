@@ -2,311 +2,393 @@ import React from "react";
 import styled from "styled-components";
 import "../../App.css";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import FusionCharts from "fusioncharts";
+import charts from "fusioncharts/fusioncharts.charts";
+import ReactFusioncharts from "react-fusioncharts";
 
 function Spotlight() {
+  // Resolves charts dependancy
+  charts(FusionCharts);
+
+  const dataSource = {
+    chart: {
+      caption: "Average Fastball Velocity",
+      yaxisname: "Velocity (in mph)",
+      subcaption: "[2005-2016]",
+      numbersuffix: " mph",
+      rotatelabels: "1",
+      setadaptiveymin: "1",
+      theme: "fusion",
+    },
+    data: [
+      {
+        label: "2005",
+        value: "89.45",
+      },
+      {
+        label: "2006",
+        value: "89.87",
+      },
+      {
+        label: "2007",
+        value: "89.64",
+      },
+      {
+        label: "2008",
+        value: "90.13",
+      },
+      {
+        label: "2009",
+        value: "90.67",
+      },
+      {
+        label: "2010",
+        value: "90.54",
+      },
+      {
+        label: "2011",
+        value: "90.75",
+      },
+      {
+        label: "2012",
+        value: "90.8",
+      },
+      {
+        label: "2013",
+        value: "91.16",
+      },
+      {
+        label: "2014",
+        value: "91.37",
+      },
+      {
+        label: "2015",
+        value: "91.66",
+      },
+      {
+        label: "2016",
+        value: "91.8",
+      },
+    ],
+  };
   return (
-    <SpotlightContainer>
-      <LeftAside>
-        <LeftContainer>
-          <LogoContainer>
-            <Logo src={require("../assets/images/logo.svg").default} />
-          </LogoContainer>
-          <LeftContainerTop>
-            <ItemContainer>
-              <ItemBox>
-                {" "}
-                <Items to={"/summary"}>
-                  <ItemName>Summary</ItemName>
-                  <ItemImageContainer>
-                    <ItemImage
-                      src={require("../assets/images/book.svg").default}
-                    />
-                  </ItemImageContainer>
-                </Items>
-                <Items to={"/product"}>
-                  <ItemName>Products</ItemName>
-                  <ItemImageContainer>
-                    <ItemImage
-                      src={require("../assets/images/slide.svg").default}
-                    />
-                  </ItemImageContainer>
-                </Items>{" "}
-                <Items to={"/hotselling"}>
-                  <ItemName>Hot Selling</ItemName>
-                  <ItemImageContainer>
-                    <ItemImage
-                      src={require("../assets/images/fire.svg").default}
-                    />
-                  </ItemImageContainer>
-                </Items>{" "}
-                <Items to={"/order"}>
-                  <ItemName>Manage Order</ItemName>
-                  <ItemImageContainer>
-                    <ItemImage
-                      src={require("../assets/images/oder.svg").default}
-                    />
-                  </ItemImageContainer>
-                </Items>{" "}
-                <Items to={"/payment"}>
-                  <ItemName>Payments</ItemName>
-                  <ItemImageContainer>
-                    <ItemImage
-                      src={require("../assets/images/wallet.svg").default}
-                    />
-                  </ItemImageContainer>
-                </Items>
-                <Items to={"/settings"}>
-                  <ItemName>settings</ItemName>
-                  <ItemImageContainer>
-                    <ItemImage
-                      src={require("../assets/images/settings.svg").default}
-                    />
-                  </ItemImageContainer>
-                </Items>
-              </ItemBox>
-            </ItemContainer>
-          </LeftContainerTop>
-          <LeftContainerBottom>
-            <GrayContainer>
-              <GraphImageBox>
-                <GraphImage
-                  src={require("../assets/images/graph-lap.svg").default}
+    <>
+      <Helmet>
+        <title>My Title</title>
+      </Helmet>
+      <SpotlightContainer>
+        <LeftAside>
+          <LeftContainer>
+            <LogoContainer>
+              <Logo src={require("../assets/images/logo.svg").default} />
+            </LogoContainer>
+            <LeftContainerTop>
+              <ItemContainer>
+                <ItemBox>
+                  {" "}
+                  <Items to={"/summary"}>
+                    <ItemName>Summary</ItemName>
+                    <ItemImageContainer>
+                      <ItemImage
+                        src={require("../assets/images/book.svg").default}
+                      />
+                    </ItemImageContainer>
+                  </Items>
+                  <Items to={"/product"}>
+                    <ItemName>Products</ItemName>
+                    <ItemImageContainer>
+                      <ItemImage
+                        src={require("../assets/images/slide.svg").default}
+                      />
+                    </ItemImageContainer>
+                  </Items>{" "}
+                  <Items to={"/hotselling"}>
+                    <ItemName>Hot Selling</ItemName>
+                    <ItemImageContainer>
+                      <ItemImage
+                        src={require("../assets/images/fire.svg").default}
+                      />
+                    </ItemImageContainer>
+                  </Items>{" "}
+                  <Items to={"/order"}>
+                    <ItemName>Manage Order</ItemName>
+                    <ItemImageContainer>
+                      <ItemImage
+                        src={require("../assets/images/oder.svg").default}
+                      />
+                    </ItemImageContainer>
+                  </Items>{" "}
+                  <Items to={"/payment"}>
+                    <ItemName>Payments</ItemName>
+                    <ItemImageContainer>
+                      <ItemImage
+                        src={require("../assets/images/wallet.svg").default}
+                      />
+                    </ItemImageContainer>
+                  </Items>
+                  <Items to={"/settings"}>
+                    <ItemName>settings</ItemName>
+                    <ItemImageContainer>
+                      <ItemImage
+                        src={require("../assets/images/settings.svg").default}
+                      />
+                    </ItemImageContainer>
+                  </Items>
+                </ItemBox>
+              </ItemContainer>
+            </LeftContainerTop>
+            <LeftContainerBottom>
+              <GrayContainer>
+                <GraphImageBox>
+                  <GraphImage
+                    src={require("../assets/images/graph-lap.svg").default}
+                  />
+                </GraphImageBox>
+                <H3Container>
+                  Power up Your <br /> Business
+                </H3Container>
+                <Button>Go Pro! </Button>
+                <ArrowImageContainer>
+                  <ArrowImage
+                    src={require("../assets/images/right-arrow.svg").default}
+                  />
+                </ArrowImageContainer>
+              </GrayContainer>
+            </LeftContainerBottom>
+          </LeftContainer>
+        </LeftAside>
+        <MidSection>
+          <MiddleFormContainer>
+            <Form>
+              <Input type="text" placeholder="Search here" />
+              <SearchImageContainer>
+                <SearchImage
+                  src={require("../assets/images/search.svg").default}
                 />
-              </GraphImageBox>
-              <H3Container>
-                Power up Your <br /> Business
-              </H3Container>
-              <Button>Go Pro!</Button>
-              <ArrowImageContainer>
-                <ArrowImage
-                  src={require("../assets/images/right-arrow.svg").default}
+              </SearchImageContainer>
+            </Form>
+          </MiddleFormContainer>
+          <StaticContainer>
+            <StaticHeading>Statistics</StaticHeading>
+            <MonthBox>
+              <MonthCount>6 Months</MonthCount>
+              <MonthArrowImage>
+                <ArrowDownImage
+                  src={require("../assets/images/down-arrow.svg").default}
                 />
-              </ArrowImageContainer>
-            </GrayContainer>
-          </LeftContainerBottom>
-        </LeftContainer>
-      </LeftAside>
-      <MidSection>
-        <MiddleFormContainer>
-          <Form>
-            <Input type="text" placeholder="Search here" />
-            <SearchImageContainer>
-              <SearchImage
-                src={require("../assets/images/search.svg").default}
+              </MonthArrowImage>
+            </MonthBox>
+          </StaticContainer>
+          <ThreeImageContainer>
+            <DoubleImageContainer>
+              <PinkContainer>
+                <PinkImageContainer>
+                  <PinkImage
+                    src={require("../assets/images/vehicle.svg").default}
+                  />
+                </PinkImageContainer>
+                <PinkDelivery>Awaiting Delivery</PinkDelivery>
+                <PinkOrder>150k Orders</PinkOrder>
+              </PinkContainer>
+              <BlueContainer>
+                <BlueImageContainer>
+                  <BlueImage
+                    src={require("../assets/images/vehicle.svg").default}
+                  />
+                </BlueImageContainer>
+                <BlueDelivery>Awaiting Delivery</BlueDelivery>
+                <BlueOrder>150k Orders</BlueOrder>
+              </BlueContainer>
+            </DoubleImageContainer>
+            <BlueGraphImageContainer>
+              <BlueGraphImage
+                src={require("../assets/images/graph-blue.svg").default}
               />
-            </SearchImageContainer>
-          </Form>
-        </MiddleFormContainer>
-        <StaticContainer>
-          <StaticHeading>Statistics</StaticHeading>
-          <MonthBox>
-            <MonthCount>6 Months</MonthCount>
-            <MonthArrowImage>
-              <ArrowDownImage
-                src={require("../assets/images/down-arrow.svg").default}
-              />
-            </MonthArrowImage>
-          </MonthBox>
-        </StaticContainer>
-        <ThreeImageContainer>
-          <DoubleImageContainer>
-            <PinkContainer>
-              <PinkImageContainer>
-                <PinkImage
-                  src={require("../assets/images/vehicle.svg").default}
+            </BlueGraphImageContainer>
+          </ThreeImageContainer>
+          <MidBottomContainer>
+            <MidLeftBox>
+              <MidLeftHeading>
+                Create Ads for Your <br />
+                Business
+              </MidLeftHeading>
+              <MidLeftImageContainer>
+                <MidLeftImage
+                  src={require("../assets/images/admin.svg").default}
                 />
-              </PinkImageContainer>
-              <PinkDelivery>Awaiting Delivery</PinkDelivery>
-              <PinkOrder>150k Orders</PinkOrder>
-            </PinkContainer>
-            <BlueContainer>
-              <BlueImageContainer>
-                <BlueImage
-                  src={require("../assets/images/vehicle.svg").default}
+              </MidLeftImageContainer>
+            </MidLeftBox>
+            <MidRightBox>
+              <MidRightHeading>
+                Secure Your <br />
+                Payments
+              </MidRightHeading>
+              <MidRightImageContainer>
+                <MidRightImage
+                  src={
+                    require("../assets/images/businessman-single.svg").default
+                  }
                 />
-              </BlueImageContainer>
-              <BlueDelivery>Awaiting Delivery</BlueDelivery>
-              <BlueOrder>150k Orders</BlueOrder>
-            </BlueContainer>
-          </DoubleImageContainer>
-          <BlueGraphImageContainer>
-            <BlueGraphImage
-              src={require("../assets/images/graph-blue.svg").default}
-            />
-          </BlueGraphImageContainer>
-        </ThreeImageContainer>
-        <MidBottomContainer>
-          <MidLeftBox>
-            <MidLeftHeading>
-              Create Ads for Your <br />
-              Business
-            </MidLeftHeading>
-            <MidLeftImageContainer>
-              <MidLeftImage
-                src={require("../assets/images/admin.svg").default}
-              />
-            </MidLeftImageContainer>
-          </MidLeftBox>
-          <MidRightBox>
-            <MidRightHeading>
-              Secure Your <br />
-              Payments
-            </MidRightHeading>
-            <MidRightImageContainer>
-              <MidRightImage
-                src={require("../assets/images/businessman-single.svg").default}
-              />
-            </MidRightImageContainer>
-          </MidRightBox>
-        </MidBottomContainer>
-      </MidSection>
+              </MidRightImageContainer>
+            </MidRightBox>
+          </MidBottomContainer>
+        </MidSection>
 
-      {/* middle section completed */}
+        {/* middle section completed */}
 
-      <RightAside>
-        <CartContainer>
-          <CartLeft>
-            <OrangeRound>6</OrangeRound>
-            <BellImageContainer>
-              <BellImage src={require("../assets/images/bell.svg").default} />
-            </BellImageContainer>
-            <MessageImageContainer>
-              <MessageImage
-                src={require("../assets/images/chat.svg").default}
-              />
-            </MessageImageContainer>
-          </CartLeft>
-          <CartRight>
-            <BoyImageContainer>
-              <BoyImage src={require("../assets/images/boy.jpg")} />
-            </BoyImageContainer>
-            <CartArrowImageContainer>
-              <CartArrowImage
-                src={require("../assets/images/down-arrow.svg").default}
-              />
-            </CartArrowImageContainer>
-          </CartRight>
-        </CartContainer>
-        <ProductContainer>
-          <ProductLeftHeading>Hot SellingProducts</ProductLeftHeading>
-          <ProductRightHeading>See all</ProductRightHeading>
-        </ProductContainer>
-        <RightAsideItemContainer>
-          <RIghtItemContainer>
-            <ItemLeftDiv>
-              <RightAsideImageBox>
-                <RightAsideImage
-                  src={require("../assets/images/wood-books.jpg")}
+        <RightAside>
+          <CartContainer>
+            <CartLeft>
+              <OrangeRound>6</OrangeRound>
+              <BellImageContainer>
+                <BellImage src={require("../assets/images/bell.svg").default} />
+              </BellImageContainer>
+              <MessageImageContainer>
+                <MessageImage
+                  src={require("../assets/images/chat.svg").default}
                 />
-              </RightAsideImageBox>
-              <RightItemDetailsBox>
-                <RightAsideItemName>
-                  Dominoes Coffee Table Game
-                </RightAsideItemName>
-                <RightAsideItemSale> 50k Sales</RightAsideItemSale>
-              </RightItemDetailsBox>
-            </ItemLeftDiv>
-            <ItemRightDiv>
-              <RightItemPrice>$30</RightItemPrice>
-            </ItemRightDiv>
-          </RIghtItemContainer>
-          <RIghtItemContainer>
-            <ItemLeftDiv>
-              <RightAsideImageBox>
-                <RightAsideImage
-                  src={require("../assets/images/black-box.jpg")}
+              </MessageImageContainer>
+            </CartLeft>
+            <CartRight>
+              <BoyImageContainer>
+                <BoyImage src={require("../assets/images/boy.jpg")} />
+              </BoyImageContainer>
+              <CartArrowImageContainer>
+                <CartArrowImage
+                  src={require("../assets/images/down-arrow.svg").default}
                 />
-              </RightAsideImageBox>
-              <RightItemDetailsBox>
-                <RightAsideItemName>
-                  Photive Wireless Speakers
-                </RightAsideItemName>
-                <RightAsideItemSale> 44k Sales</RightAsideItemSale>
-              </RightItemDetailsBox>
-            </ItemLeftDiv>
-            <ItemRightDiv>
-              <RightItemPrice>$19</RightItemPrice>
-            </ItemRightDiv>
-          </RIghtItemContainer>
-          <RIghtItemContainer>
-            <ItemLeftDiv>
-              <RightAsideImageBox>
-                <RightAsideImage
-                  src={require("../assets/images/speaker.jpg")}
+              </CartArrowImageContainer>
+            </CartRight>
+          </CartContainer>
+          <ProductContainer>
+            <ProductLeftHeading>Hot SellingProducts</ProductLeftHeading>
+            <ProductRightHeading>See all</ProductRightHeading>
+          </ProductContainer>
+          <RightAsideItemContainer>
+            <RIghtItemContainer>
+              <ItemLeftDiv>
+                <RightAsideImageBox>
+                  <RightAsideImage
+                    src={require("../assets/images/wood-books.jpg")}
+                  />
+                </RightAsideImageBox>
+                <RightItemDetailsBox>
+                  <RightAsideItemName>
+                    Dominoes Coffee Table Game
+                  </RightAsideItemName>
+                  <RightAsideItemSale> 50k Sales</RightAsideItemSale>
+                </RightItemDetailsBox>
+              </ItemLeftDiv>
+              <ItemRightDiv>
+                <RightItemPrice>$30</RightItemPrice>
+              </ItemRightDiv>
+            </RIghtItemContainer>
+            <RIghtItemContainer>
+              <ItemLeftDiv>
+                <RightAsideImageBox>
+                  <RightAsideImage
+                    src={require("../assets/images/black-box.jpg")}
+                  />
+                </RightAsideImageBox>
+                <RightItemDetailsBox>
+                  <RightAsideItemName>
+                    Photive Wireless Speakers
+                  </RightAsideItemName>
+                  <RightAsideItemSale> 44k Sales</RightAsideItemSale>
+                </RightItemDetailsBox>
+              </ItemLeftDiv>
+              <ItemRightDiv>
+                <RightItemPrice>$19</RightItemPrice>
+              </ItemRightDiv>
+            </RIghtItemContainer>
+            <RIghtItemContainer>
+              <ItemLeftDiv>
+                <RightAsideImageBox>
+                  <RightAsideImage
+                    src={require("../assets/images/speaker.jpg")}
+                  />
+                </RightAsideImageBox>
+                <RightItemDetailsBox>
+                  <RightAsideItemName>
+                    Urbanears Lotson Speaker
+                  </RightAsideItemName>
+                  <RightAsideItemSale>42k Sales</RightAsideItemSale>
+                </RightItemDetailsBox>
+              </ItemLeftDiv>
+              <ItemRightDiv>
+                <RightItemPrice>$79</RightItemPrice>
+              </ItemRightDiv>
+            </RIghtItemContainer>
+            <RIghtItemContainer>
+              <ItemLeftDiv>
+                <RightAsideImageBox>
+                  <RightAsideImage
+                    src={require("../assets/images/headphones 1.jpg")}
+                  />
+                </RightAsideImageBox>
+                <RightItemDetailsBox>
+                  <RightAsideItemName>Platttan 2 Headphones</RightAsideItemName>
+                  <RightAsideItemSale> 38k Sales</RightAsideItemSale>
+                </RightItemDetailsBox>
+              </ItemLeftDiv>
+              <ItemRightDiv>
+                <RightItemPrice>$35</RightItemPrice>
+              </ItemRightDiv>
+            </RIghtItemContainer>
+            <RIghtItemContainer>
+              <ItemLeftDiv>
+                <RIghtItemContainer>
+                  <ItemLeftDiv>
+                    <RightAsideImageBox>
+                      <RightAsideImage
+                        src={require("../assets/images/radio.jpg")}
+                      />
+                    </RightAsideImageBox>
+                    <RightItemDetailsBox>
+                      <RightAsideItemName>
+                        Solar Hand Crank Radio
+                      </RightAsideItemName>
+                      <RightAsideItemSale> 30k Sales</RightAsideItemSale>
+                    </RightItemDetailsBox>
+                  </ItemLeftDiv>
+                </RIghtItemContainer>
+              </ItemLeftDiv>
+              <ItemRightDiv>
+                <RightItemPrice>$30</RightItemPrice>
+              </ItemRightDiv>
+            </RIghtItemContainer>
+          </RightAsideItemContainer>
+          <RightAsideBottomContainer>
+            <HelpComment>
+              What can we help <br /> you with?
+            </HelpComment>
+            <ChatContainer>
+              <CommentBox>
+                <Comment>Chat with us</Comment>
+                <CommentArrowContainer>
+                  <CommentArrowImage
+                    src={require("../assets/images/down-arrow2.svg").default}
+                  />
+                </CommentArrowContainer>
+              </CommentBox>
+              <ChatRightImageContainer>
+                <ChatRightImage
+                  src={require("../assets/images/businessman-2.svg").default}
                 />
-              </RightAsideImageBox>
-              <RightItemDetailsBox>
-                <RightAsideItemName>
-                  Urbanears Lotson Speaker
-                </RightAsideItemName>
-                <RightAsideItemSale>42k Sales</RightAsideItemSale>
-              </RightItemDetailsBox>
-            </ItemLeftDiv>
-            <ItemRightDiv>
-              <RightItemPrice>$79</RightItemPrice>
-            </ItemRightDiv>
-          </RIghtItemContainer>
-          <RIghtItemContainer>
-            <ItemLeftDiv>
-              <RightAsideImageBox>
-                <RightAsideImage
-                  src={require("../assets/images/headphones 1.jpg")}
-                />
-              </RightAsideImageBox>
-              <RightItemDetailsBox>
-                <RightAsideItemName>Platttan 2 Headphones</RightAsideItemName>
-                <RightAsideItemSale> 38k Sales</RightAsideItemSale>
-              </RightItemDetailsBox>
-            </ItemLeftDiv>
-            <ItemRightDiv>
-              <RightItemPrice>$35</RightItemPrice>
-            </ItemRightDiv>
-          </RIghtItemContainer>
-          <RIghtItemContainer>
-            <ItemLeftDiv>
-              <RIghtItemContainer>
-                <ItemLeftDiv>
-                  <RightAsideImageBox>
-                    <RightAsideImage
-                      src={require("../assets/images/radio.jpg")}
-                    />
-                  </RightAsideImageBox>
-                  <RightItemDetailsBox>
-                    <RightAsideItemName>
-                      Solar Hand Crank Radio
-                    </RightAsideItemName>
-                    <RightAsideItemSale> 30k Sales</RightAsideItemSale>
-                  </RightItemDetailsBox>
-                </ItemLeftDiv>
-              </RIghtItemContainer>
-            </ItemLeftDiv>
-            <ItemRightDiv>
-              <RightItemPrice>$30</RightItemPrice>
-            </ItemRightDiv>
-          </RIghtItemContainer>
-        </RightAsideItemContainer>
-        <RightAsideBottomContainer>
-          <HelpComment>
-            What can we help <br /> you with?
-          </HelpComment>
-          <ChatContainer>
-            <CommentBox>
-              <Comment>Chat with us</Comment>
-              <CommentArrowContainer>
-                <CommentArrowImage
-                  src={require("../assets/images/down-arrow2.svg").default}
-                />
-              </CommentArrowContainer>
-            </CommentBox>
-            <ChatRightImageContainer>
-              <ChatRightImage
-                src={require("../assets/images/businessman-2.svg").default}
-              />
-            </ChatRightImageContainer>
-          </ChatContainer>
-        </RightAsideBottomContainer>
-      </RightAside>
-    </SpotlightContainer>
+              </ChatRightImageContainer>
+            </ChatContainer>
+          </RightAsideBottomContainer>
+        </RightAside>
+      </SpotlightContainer>{" "}
+      <ReactFusioncharts
+        type="line"
+        width="100%"
+        height="100%"
+        dataFormat="JSON"
+        dataSource={dataSource}
+      />
+    </>
   );
 }
 export default Spotlight;
@@ -411,13 +493,21 @@ const Button = styled.button`
   display: inline-block;
   font-weight: 600;
   margin: 0 auto;
+
+  &:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
 `;
 
 const ArrowImageContainer = styled.span`
   display: inline-block;
   width: 10px;
   position: absolute;
-  top: 198px;
+  top: 200px;
   right: 58px;
 `;
 const ArrowImage = styled.img`
@@ -511,6 +601,11 @@ const PinkContainer = styled.div`
   height: 165px;
   border-radius: 12px;
   padding: 20px;
+
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
 `;
 const PinkImageContainer = styled.span`
   display: inline-block;
@@ -535,6 +630,11 @@ const BlueContainer = styled.div`
   height: 165px;
   border-radius: 12px;
   padding: 20px;
+
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
 `;
 const BlueImageContainer = styled.span`
   display: inline-block;
@@ -645,6 +745,12 @@ const OrangeRound = styled.div`
   font-size: 11px;
   top: -8px;
   right: 43px;
+
+  &:hover {
+    transform: scale(1.6);
+    transition-duration: 0.5s;
+    color: #000;
+  }
 `;
 
 const BellImageContainer = styled.span`
@@ -655,6 +761,12 @@ const BellImageContainer = styled.span`
 const BellImage = styled.img`
   width: 100%;
   display: block;
+
+  &:hover {
+    transform: scale(1.8);
+    transition-duration: 0.5s;
+    color: #000;
+  }
 `;
 
 const MessageImageContainer = styled.span`
@@ -664,6 +776,12 @@ const MessageImageContainer = styled.span`
 const MessageImage = styled.img`
   width: 100%;
   display: block;
+
+  &:hover {
+    transform: scale(1.8);
+    transition-duration: 0.5s;
+    color: #000;
+  }
 `;
 
 const CartRight = styled.div`
@@ -681,6 +799,12 @@ const BoyImage = styled.img`
   width: 100%;
   display: block;
   border-radius: 12px;
+
+  &:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    color: #000;
+  }
 `;
 
 const CartArrowImageContainer = styled.span`
@@ -690,6 +814,12 @@ const CartArrowImageContainer = styled.span`
 const CartArrowImage = styled.img`
   width: 100%;
   display: block;
+
+  &:hover {
+    transform: scale(1.8);
+    transition-duration: 0.5s;
+    color: #000;
+  }
 `;
 
 const ProductContainer = styled.div`
@@ -767,6 +897,12 @@ const ChatContainer = styled.div`
 const CommentBox = styled.div`
   display: flex;
   align-items: center;
+
+  &:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    color: #000;
+  }
 `;
 const Comment = styled.a`
   font-size: 14px;

@@ -1,14 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 function Summary() {
   return (
-    <SummaryContainer>
-      <SummaryTitle>SUMMARY</SummaryTitle>
-      <SummaryBody>
-        <SummaryImage src={require("../assets/images/summary1.jpg")} />
-      </SummaryBody>
-    </SummaryContainer>
+    <>
+      <Helmet>
+        <title>Summary</title>
+      </Helmet>
+      <SummaryContainer>
+        <SummaryTitle>SUMMARY</SummaryTitle>
+        <SummaryBody>
+          <SummaryImage src={require("../assets/images/summary.jpg")} />
+        </SummaryBody>
+      </SummaryContainer>
+    </>
   );
 }
 
@@ -16,7 +22,7 @@ export default Summary;
 
 const SummaryContainer = styled.div`
   padding: 30px;
-  background: #cdb8e0;
+  background: #dcc6ee;
 `;
 const SummaryTitle = styled.h1`
   text-align: center;
@@ -27,6 +33,9 @@ const SummaryTitle = styled.h1`
 `;
 const SummaryBody = styled.div`
   display: block;
+  width: 630px;
+  height: 619px;
+  margin: 0 auto;
 `;
 const SummaryImage = styled.img`
   width: 100%;

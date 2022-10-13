@@ -1,12 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 function Hotselling() {
   return (
-    <HotsellingContainer>
-      <Name>HOT SELLINGS</Name>
-      <Image src={require("../assets/images/hotselling.jpg")} />
-    </HotsellingContainer>
+    <>
+      <Helmet>
+        <title> Hot Selling</title>
+      </Helmet>
+      <HotsellingContainer>
+        <Name>HOT SELLINGS</Name>
+        <Image src={require("../assets/images/hotselling.jpg")} />
+      </HotsellingContainer>
+    </>
   );
 }
 

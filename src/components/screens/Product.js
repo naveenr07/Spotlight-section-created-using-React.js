@@ -1,12 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 function Product() {
   return (
-    <ProductContainer>
-      <Name>PRODUCTS</Name>
-      <Image src={require("../assets/images/products.jpg")} />
-    </ProductContainer>
+    <>
+      <Helmet>
+        <title>Products</title>
+      </Helmet>
+      <ProductContainer>
+        <Name>PRODUCTS</Name>
+        <Image src={require("../assets/images/products.jpg")} />
+      </ProductContainer>
+    </>
   );
 }
 
