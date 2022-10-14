@@ -3,75 +3,8 @@ import styled from "styled-components";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import FusionCharts from "fusioncharts";
-import charts from "fusioncharts/fusioncharts.charts";
-import ReactFusioncharts from "react-fusioncharts";
 
 function Spotlight() {
-  // Resolves charts dependancy
-  charts(FusionCharts);
-
-  const dataSource = {
-    chart: {
-      caption: "Average Fastball Velocity",
-      yaxisname: "Velocity (in mph)",
-      subcaption: "[2005-2016]",
-      numbersuffix: " mph",
-      rotatelabels: "1",
-      setadaptiveymin: "1",
-      theme: "fusion",
-    },
-    data: [
-      {
-        label: "2005",
-        value: "89.45",
-      },
-      {
-        label: "2006",
-        value: "89.87",
-      },
-      {
-        label: "2007",
-        value: "89.64",
-      },
-      {
-        label: "2008",
-        value: "90.13",
-      },
-      {
-        label: "2009",
-        value: "90.67",
-      },
-      {
-        label: "2010",
-        value: "90.54",
-      },
-      {
-        label: "2011",
-        value: "90.75",
-      },
-      {
-        label: "2012",
-        value: "90.8",
-      },
-      {
-        label: "2013",
-        value: "91.16",
-      },
-      {
-        label: "2014",
-        value: "91.37",
-      },
-      {
-        label: "2015",
-        value: "91.66",
-      },
-      {
-        label: "2016",
-        value: "91.8",
-      },
-    ],
-  };
   return (
     <>
       <Helmet>
@@ -365,7 +298,7 @@ function Spotlight() {
             </HelpComment>
             <ChatContainer>
               <CommentBox>
-                <Comment>Chat with us</Comment>
+                <Comment to={"/Chatbot"}>Chat with us</Comment>
                 <CommentArrowContainer>
                   <CommentArrowImage
                     src={require("../assets/images/down-arrow2.svg").default}
@@ -381,13 +314,6 @@ function Spotlight() {
           </RightAsideBottomContainer>
         </RightAside>
       </SpotlightContainer>{" "}
-      <ReactFusioncharts
-        type="line"
-        width="100%"
-        height="100%"
-        dataFormat="JSON"
-        dataSource={dataSource}
-      />
     </>
   );
 }
@@ -904,7 +830,7 @@ const CommentBox = styled.div`
     color: #000;
   }
 `;
-const Comment = styled.a`
+const Comment = styled(Link)`
   font-size: 14px;
   font-weight: 600;
   color: #3d438e;
