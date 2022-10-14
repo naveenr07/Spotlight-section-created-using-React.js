@@ -4,14 +4,8 @@ import "../../App.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Robot from "../assets/Robot";
-// import { Chatbot } from "./Chatbot";
-// import { GlobalStyle } from "../../globalStyles";
 
 function Spotlight() {
-  // const [showBot, setShowBot] = useState(false);
-  // const openBot = () => {
-  //   setShowBot((prev) => !prev);
-  // };
   return (
     <>
       <Helmet>
@@ -836,18 +830,8 @@ const ChatContainer = styled.div`
 const CommentBox = styled.div`
   display: flex;
   align-items: center;
-
-  /* &:hover {
-    transform: scale(1.2);
-    transition-duration: 0.5s;
-    color: #000;
-  } */
 `;
-// const Comment = styled(Link)`
-//   font-size: 14px;
-//   font-weight: 600;
-//   color: #3d438e;
-// `;
+
 const CommentArrowContainer = styled.div`
   display: inline-block;
   transform: rotate(270deg);
@@ -866,19 +850,3 @@ const ChatRightImage = styled.img`
   width: 100%;
   display: block;
 `;
-
-// chatbot
-
-// const BotContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `;
-
-// const BotButton = styled.button`
-//   font-size: 18px;
-//   min-width: 100px;
-//   font-weight: 600;
-//   color: #3d438e;
-//   cursor: pointer;
-// `;
