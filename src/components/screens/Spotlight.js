@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Robot from "../assets/Robot";
+import Bot from "../screens/ChatBot/Bot";
 
 function Spotlight() {
   return (
@@ -306,7 +306,8 @@ function Spotlight() {
                   <GlobalStyle />
                 </BotContainer> */}
                 {/* chatbot end */}
-                <Robot />
+                {/* <Robot /> */}
+                <Bot />
 
                 <CommentArrowContainer>
                   <CommentArrowImage
@@ -743,10 +744,12 @@ const BoyImage = styled.img`
 const CartArrowImageContainer = styled.span`
   display: inline-block;
   width: 20px;
+  z-index: 10;
 `;
 const CartArrowImage = styled.img`
   width: 100%;
   display: block;
+  z-index: 10;
 
   &:hover {
     transform: scale(1.8);
@@ -835,7 +838,7 @@ const CommentBox = styled.div`
 const CommentArrowContainer = styled.div`
   display: inline-block;
   transform: rotate(270deg);
-  width: 20px;
+  width: 17px;
   margin-right: 70px;
 `;
 const CommentArrowImage = styled.img`
