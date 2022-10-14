@@ -31,7 +31,7 @@ function App() {
 
           <Route exact path="/settings" element={<Setting />} />
 
-          <Route exact path="/chatbot" element={<Chatbot />} />
+          {/* <Route exact path="/chatbot" element={<Chatbot />} /> */}
         </Routes>
       </Router>
     </>

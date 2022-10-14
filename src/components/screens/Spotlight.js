@@ -3,8 +3,15 @@ import styled from "styled-components";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Robot from "../assets/Robot";
+// import { Chatbot } from "./Chatbot";
+// import { GlobalStyle } from "../../globalStyles";
 
 function Spotlight() {
+  // const [showBot, setShowBot] = useState(false);
+  // const openBot = () => {
+  //   setShowBot((prev) => !prev);
+  // };
   return (
     <>
       <Helmet>
@@ -298,7 +305,15 @@ function Spotlight() {
             </HelpComment>
             <ChatContainer>
               <CommentBox>
-                <Comment to={"/Chatbot"}>Chat with us</Comment>
+                {/* chatbot  */}
+                {/* <BotContainer>
+                  <BotButton onClick={openBot}>chat with us </BotButton>
+                  <Chatbot showBot={showBot} setShowBot={setShowBot} />
+                  <GlobalStyle />
+                </BotContainer> */}
+                {/* chatbot end */}
+                <Robot />
+
                 <CommentArrowContainer>
                   <CommentArrowImage
                     src={require("../assets/images/down-arrow2.svg").default}
@@ -321,10 +336,8 @@ export default Spotlight;
 
 const SpotlightContainer = styled.div`
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
 `;
 
 const LeftAside = styled.div`
@@ -824,22 +837,22 @@ const CommentBox = styled.div`
   display: flex;
   align-items: center;
 
-  &:hover {
+  /* &:hover {
     transform: scale(1.2);
     transition-duration: 0.5s;
     color: #000;
-  }
+  } */
 `;
-const Comment = styled(Link)`
-  font-size: 14px;
-  font-weight: 600;
-  color: #3d438e;
-`;
+// const Comment = styled(Link)`
+//   font-size: 14px;
+//   font-weight: 600;
+//   color: #3d438e;
+// `;
 const CommentArrowContainer = styled.div`
   display: inline-block;
   transform: rotate(270deg);
   width: 20px;
-  margin-right: 100px;
+  margin-right: 70px;
 `;
 const CommentArrowImage = styled.img`
   width: 100%;
@@ -853,3 +866,19 @@ const ChatRightImage = styled.img`
   width: 100%;
   display: block;
 `;
+
+// chatbot
+
+// const BotContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
+
+// const BotButton = styled.button`
+//   font-size: 18px;
+//   min-width: 100px;
+//   font-weight: 600;
+//   color: #3d438e;
+//   cursor: pointer;
+// `;
