@@ -8,7 +8,6 @@ import Hotselling from "./components/screens/Hotselling";
 import Order from "./components/screens/Order";
 import Payment from "./components/screens/Payments";
 import Setting from "./components/screens/Settings";
-// import { Bot } from "./components/screens/ChatBot/Chatbot";
 
 function App() {
   return (
@@ -30,8 +29,6 @@ function App() {
           <Route exact path="/payment" element={<Payment />} />
 
           <Route exact path="/settings" element={<Setting />} />
-
-          {/* <Route exact path="/chatbot" element={<Bot />} /> */}
         </Routes>
       </Router>
     </>
