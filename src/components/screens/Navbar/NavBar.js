@@ -9,9 +9,9 @@ function NavBar() {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to={"/"}>
-            Bussiness
-            {/* <NavImage src={require("../../assets/images/logo.svg").default} /> */}
+          <NavLogo>
+            {/* Bussiness */}
+            <NavImage src={require("../../assets/images/logo.svg").default} />
           </NavLogo>
           <MobileIcon>
             <FaBars />
@@ -35,10 +35,10 @@ function NavBar() {
             <NaveItem>
               <NavLinks to={"/settings"}> Settings</NavLinks>
             </NaveItem>
-            <NavBtn>
-              <NavBtnLink to={"/summary"}>Sign in</NavBtnLink>
-            </NavBtn>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to={"/summary"}>Sign In</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
@@ -70,26 +70,25 @@ const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  margin-right: 70px;
+  padding: 0 40px;
 `;
 
 const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: none; */
 `;
 
-// const NavImage = styled.img`
-//   display: block;
-//   width: 100%;
-// `;
+const NavImage = styled.img`
+  display: block;
+  width: 100%;
+`;
 
 const MobileIcon = styled.div`
   display: none;
@@ -157,7 +156,7 @@ const NavBtnLink = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 13px;
 
   &:hover {
     background: #fff;

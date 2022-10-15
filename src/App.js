@@ -1,6 +1,6 @@
 import "./App.css";
 import Spotlight from "./components/screens/Spotlight";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import PageNotFound from "./components/screens/PageNotFound";
 import Summary from "./components/screens/Summary";
 import Product from "./components/screens/Product";
@@ -8,14 +8,15 @@ import Hotselling from "./components/screens/Hotselling";
 import Order from "./components/screens/Order";
 import Payment from "./components/screens/Payments";
 import Setting from "./components/screens/Settings";
-import NavBar from "./components/screens/Navbar/NavBar";
+
+import Index from "./pages/Index";
 
 function App() {
   return (
     <>
       <Router>
-        <Routes>
-          {/* <Route exact path="/" element={<Spotlight />} />
+        {/* <Routes> */}
+        {/* <Route exact path="/" element={<Spotlight />} />
 
           <Route exact path="*" element={<PageNotFound />} />
 
@@ -30,8 +31,10 @@ function App() {
           <Route exact path="/payment" element={<Payment />} />
 
           <Route exact path="/settings" element={<Setting />} /> */}
-          <Route exact path="/" element={<NavBar />} />
-        </Routes>
+        {/* <Route exact path="/" element={<NavBar />} />
+          <Route exact path="/" element={<Sidebar />} /> */}
+        <Index />
+        {/* </Routes> */}
       </Router>
     </>
   );
