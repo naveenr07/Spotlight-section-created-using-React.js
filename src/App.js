@@ -8,13 +8,14 @@ import Hotselling from "./components/screens/Hotselling";
 import Order from "./components/screens/Order";
 import Payment from "./components/screens/Payments";
 import Setting from "./components/screens/Settings";
+import NavBar from "./components/screens/Navbar/NavBar";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Spotlight />} />
+          {/* <Route exact path="/" element={<Spotlight />} />
 
           <Route exact path="*" element={<PageNotFound />} />
 
@@ -28,7 +29,8 @@ function App() {
 
           <Route exact path="/payment" element={<Payment />} />
 
-          <Route exact path="/settings" element={<Setting />} />
+          <Route exact path="/settings" element={<Setting />} /> */}
+          <Route exact path="/" element={<NavBar />} />
         </Routes>
       </Router>
     </>
