@@ -347,6 +347,10 @@ const LogoContainer = styled.div`
   display: block;
   width: 140px;
   margin-bottom: 45px;
+
+  @media all and (max-width: 1380px) {
+    width: 150px;
+  }
 `;
 const Logo = styled.img`
   display: block;
@@ -369,6 +373,7 @@ const Items = styled(Link)`
   justify-content: space-between;
   color: #867f7f;
   margin-bottom: 35px;
+  text-decoration: none;
 
   &:first-child {
     color: #323989;
@@ -540,6 +545,11 @@ const PinkContainer = styled.div`
     transform: scale(1.1);
     transition-duration: 0.5s;
   }
+  @media all and (max-width: 1380px) {
+    height: 152px;
+    padding: 12px 20px;
+    font-size: 22px;
+  }
 `;
 const PinkImageContainer = styled.span`
   display: inline-block;
@@ -568,6 +578,12 @@ const BlueContainer = styled.div`
   &:hover {
     transform: scale(1.1);
     transition-duration: 0.5s;
+  }
+
+  @media all and (max-width: 1380px) {
+    height: 152px;
+    padding: 12px 20px;
+    font-size: 22px;
   }
 `;
 const BlueImageContainer = styled.span`
