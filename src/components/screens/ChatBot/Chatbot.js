@@ -12,6 +12,21 @@ const Background = styled.div`
   position: absolute;
   top: 172px;
   left: 0px;
+
+  @media all and (max-width: 1380px) {
+    width: 99%;
+    height: 88%;
+    position: absolute;
+    top: 154px;
+    left: 0px;
+  }
+  @media all and (max-width: 1280px) {
+    width: 98%;
+    height: 88%;
+    position: absolute;
+    top: 50px;
+    left: 6px;
+  }
 `;
 
 const BotWrapper = styled.div`

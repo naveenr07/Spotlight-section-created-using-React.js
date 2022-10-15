@@ -36,6 +36,10 @@ const Button = styled.button`
   font-size: 16px;
   cursor: pointer;
 
+  @media all and (max-width: 1280px) {
+    font-size: 14px;
+  }
+
   &:hover {
     transform: scale(0.8);
     transition-duration: 0.5s;

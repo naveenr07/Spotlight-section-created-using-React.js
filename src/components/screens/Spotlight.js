@@ -338,19 +338,22 @@ const SpotlightContainer = styled.div`
 const LeftAside = styled.div`
   border-right: 2px solid #d9d9d9;
   width: 20%;
+  @media all and (max-width: 1280px) {
+    height: 100vh;
+  }
 `;
 
 const LeftContainer = styled.div`
   padding: 45px;
+
+  @media all and (max-width: 1280px) {
+    padding: 30px 18px;
+  }
 `;
 const LogoContainer = styled.div`
   display: block;
   width: 140px;
   margin-bottom: 45px;
-
-  @media all and (max-width: 1380px) {
-    width: 150px;
-  }
 `;
 const Logo = styled.img`
   display: block;
@@ -365,7 +368,9 @@ const ItemName = styled.h6`
 `;
 
 const ItemContainer = styled.div``;
-const ItemBox = styled.ul``;
+const ItemBox = styled.ul`
+  padding-left: 0.2rem;
+`;
 
 const Items = styled(Link)`
   display: flex;
@@ -374,6 +379,10 @@ const Items = styled(Link)`
   color: #867f7f;
   margin-bottom: 35px;
   text-decoration: none;
+
+  @media all and (max-width: 1280px) {
+    margin-bottom: 30px;
+  }
 
   &:first-child {
     color: #323989;
@@ -397,6 +406,10 @@ const LeftContainerBottom = styled.div`
   display: flex;
   align-items: end;
   justify-content: center;
+
+  @media all and (max-width: 1440px) {
+    height: 382px;
+  }
 `;
 
 const GrayContainer = styled.div`
@@ -404,6 +417,10 @@ const GrayContainer = styled.div`
   padding: 30px;
   border-radius: 14px;
   position: relative;
+
+  @media all and (max-width: 1280px) {
+    padding: 18px;
+  }
 `;
 
 const GraphImageBox = styled.div`
@@ -430,7 +447,7 @@ const Button = styled.button`
   border-radius: 10px;
   background: #323989;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 auto;
 
   &:hover {
@@ -439,6 +456,10 @@ const Button = styled.button`
     background: #fff;
     color: #000;
     border: 2px solid #000;
+  }
+
+  @media all and (max-width: 1280px) {
+    font-size: 12px;
   }
 `;
 
@@ -530,9 +551,17 @@ const ThreeImageContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-bottom: 60px;
+
+  @media all and (max-width: 1440px) {
+    margin-bottom: 90px;
+  }
 `;
 const DoubleImageContainer = styled.div`
   width: 48%;
+
+  @media all and (max-width: 1440px) {
+    width: 45%;
+  }
 `;
 const PinkContainer = styled.div`
   background: #f4e7e5;
@@ -545,16 +574,29 @@ const PinkContainer = styled.div`
     transform: scale(1.1);
     transition-duration: 0.5s;
   }
-  @media all and (max-width: 1380px) {
-    height: 152px;
-    padding: 12px 20px;
-    font-size: 22px;
+
+  @media all and (max-width: 1440px) {
+    height: 140px;
+    padding: 11px 20px;
+  }
+
+  @media all and (max-width: 1280px) {
+    height: 110px;
+    padding: 11px 20px;
   }
 `;
 const PinkImageContainer = styled.span`
   display: inline-block;
   margin-bottom: 10px;
   width: 50px;
+
+  @media all and (max-width: 1440px) {
+    margin-bottom: 6px;
+    width: 45px;
+  }
+  @media all and (max-width: 1280px) {
+    width: 35px;
+  }
 `;
 const PinkImage = styled.img`
   width: 100%;
@@ -563,10 +605,25 @@ const PinkImage = styled.img`
 const PinkDelivery = styled.h6`
   font-weight: 600;
   font-size: 18px;
+
+  @media all and (max-width: 1440px) {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  @media all and (max-width: 1280px) {
+    font-size: 13px;
+  }
 `;
 const PinkOrder = styled.h4`
   font-weight: 600;
   font-size: 24px;
+
+  @media all and (max-width: 1440px) {
+    font-size: 20px;
+  }
+  @media all and (max-width: 1280px) {
+    font-size: 16px;
+  }
 `;
 
 const BlueContainer = styled.div`
@@ -580,16 +637,28 @@ const BlueContainer = styled.div`
     transition-duration: 0.5s;
   }
 
-  @media all and (max-width: 1380px) {
-    height: 152px;
-    padding: 12px 20px;
-    font-size: 22px;
+  @media all and (max-width: 1440px) {
+    height: 140px;
+    padding: 11px 20px;
+  }
+
+  @media all and (max-width: 1280px) {
+    height: 110px;
+    padding: 11px 20px;
   }
 `;
 const BlueImageContainer = styled.span`
   display: inline-block;
   margin-bottom: 10px;
   width: 50px;
+
+  @media all and (max-width: 1440px) {
+    margin-bottom: 6px;
+    width: 45px;
+  }
+  @media all and (max-width: 1280px) {
+    width: 35px;
+  }
 `;
 const BlueImage = styled.img`
   width: 100%;
@@ -598,15 +667,33 @@ const BlueImage = styled.img`
 const BlueDelivery = styled.h6`
   font-weight: 600;
   font-size: 18px;
+
+  @media all and (max-width: 1440px) {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  @media all and (max-width: 1280px) {
+    font-size: 13px;
+  }
 `;
 const BlueOrder = styled.h4`
   font-weight: 600;
   font-size: 24px;
+  @media all and (max-width: 1440px) {
+    font-size: 20px;
+  }
+  @media all and (max-width: 1280px) {
+    font-size: 16px;
+  }
 `;
 
 const BlueGraphImageContainer = styled.div`
   width: 48%;
   display: block;
+
+  @media all and (max-width: 1440px) {
+    width: 50%;
+  }
 `;
 const BlueGraphImage = styled.img`
   width: 100%;
@@ -623,23 +710,38 @@ const MidBottomContainer = styled.div`
 
 const MidLeftBox = styled.div`
   width: 30%;
+
+  @media all and (max-width: 1440px) {
+    width: 36%;
+  }
+  @media all and (max-width: 1280px) {
+    width: 46%;
+  }
 `;
 
 const MidLeftHeading = styled.h5`
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 22px;
+
+  @media all and (max-width: 1280px) {
+    font-size: 18px;
+  }
 `;
 
 const MidLeftImageContainer = styled.div`
   display: block;
   width: 100px;
+  margin-left: 32px;
+
+  @media all and (max-width: 1280px) {
+    width: 108px;
+  }
 `;
 
 const MidLeftImage = styled.img`
   width: 100%;
   display: block;
-  margin-left: 40px;
 `;
 
 const MidRightBox = styled.div`
@@ -648,16 +750,29 @@ const MidRightBox = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 280px;
+
+  @media all and (max-width: 1280px) {
+    width: 46%;
+    height: 290px;
+  }
 `;
 
 const MidRightHeading = styled.h5`
   font-size: 18px;
   font-weight: 600;
+
+  @media all and (max-width: 1280px) {
+    font-size: 18px;
+  }
 `;
 
 const MidRightImageContainer = styled.div`
   display: block;
   width: 130px;
+
+  @media all and (max-width: 1280px) {
+    width: 160px;
+  }
 `;
 
 const MidRightImage = styled.img`
@@ -671,6 +786,10 @@ const RightAside = styled.div`
   background: #f1f1f3;
   width: 35%;
   padding: 38px 30px 11px 58px;
+
+  @media all and (max-width: 1280px) {
+    padding: 25px 18px 11px 18px;
+  }
 `;
 
 const CartContainer = styled.div`
@@ -678,6 +797,10 @@ const CartContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 56px;
+
+  @media all and (max-width: 1280px) {
+    margin-bottom: 32px;
+  }
 `;
 
 const CartLeft = styled.div`
@@ -779,6 +902,10 @@ const ProductContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+
+  @media all and (max-width: 1280px) {
+    margin-bottom: 25px;
+  }
 `;
 const ProductLeftHeading = styled.h4`
   font-size: 22px;
@@ -791,6 +918,7 @@ const ProductRightHeading = styled.h4`
 
 const RightAsideItemContainer = styled.ul`
   margin-bottom: 28px;
+  padding-left: 0;
 `;
 
 const RIghtItemContainer = styled.li`
@@ -801,6 +929,9 @@ const RIghtItemContainer = styled.li`
 
   &:last-child {
     margin-bottom: 0;
+  }
+  @media all and (max-width: 1280px) {
+    margin-bottom: 30px;
   }
 `;
 const ItemLeftDiv = styled.div`
@@ -840,6 +971,10 @@ const RightAsideBottomContainer = styled.div`
 const HelpComment = styled.h3`
   font-size: 20px;
   font-weight: 600;
+
+  @media all and (max-width: 1280px) {
+    font-size: 16px;
+  }
 `;
 const ChatContainer = styled.div`
   display: flex;
