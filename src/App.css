@@ -97,3 +97,11 @@ br.clear {
   font-style: normal;
   font-display: swap;
 }
+nav.navbar {
+  display: none !important;
+}
+@media all and (max-width: 768px) {
+  nav.navbar {
+    display: block !important;
+  }
+}

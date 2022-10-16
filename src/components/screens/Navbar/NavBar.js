@@ -10,7 +10,6 @@
 //       <Nav>
 //         <NavbarContainer>
 //           <NavLogo>
-//             {/* Bussiness */}
 //             <NavImage src={require("../../assets/images/logo.svg").default} />
 //           </NavLogo>
 //           <MobileIcon onClick={toggle}>

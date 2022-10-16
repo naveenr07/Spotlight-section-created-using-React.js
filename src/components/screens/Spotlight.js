@@ -4,6 +4,7 @@ import "../../App.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Bot from "../screens/ChatBot/Bot";
+import Header from "../screens/Header/Header";
 
 function Spotlight() {
   return (
@@ -11,6 +12,7 @@ function Spotlight() {
       <Helmet>
         <title>My Title</title>
       </Helmet>
+      <Header />
       <SpotlightContainer>
         <LeftAside>
           <LeftContainer>
@@ -330,11 +332,22 @@ const SpotlightContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftAside = styled.div`
   border-right: 2px solid #d9d9d9;
   width: 20%;
+
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
+  @media all and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -346,6 +359,9 @@ const LeftContainer = styled.div`
   @media all and (max-width: 1080px) {
     padding: 46px 16px;
   }
+  @media all and (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 const LogoContainer = styled.div`
   display: block;
@@ -354,6 +370,9 @@ const LogoContainer = styled.div`
 
   @media all and (max-width: 1080px) {
     width: 120px;
+  }
+  @media all and (max-width: 768px) {
+    display: none;
   }
 `;
 const Logo = styled.img`
@@ -400,6 +419,9 @@ const Items = styled(Link)`
   }
   &:last-child {
     margin-bottom: 0;
+  }
+  @media all and (max-width: 768px) {
+    flex-direction: column-reverse;
   }
 `;
 
@@ -522,11 +544,20 @@ const MainMiddleContainer = styled.div`
   width: 80%;
   display: flex;
   justify-content: center;
+
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 const MidSection = styled.div`
   width: 56%;
   padding: 32px 40px;
+
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const MiddleFormContainer = styled.div``;
@@ -604,6 +635,9 @@ const ThreeImageContainer = styled.div`
   @media all and (max-width: 980px) {
     display: block;
   }
+  @media all and (max-width: 980px) {
+    margin-bottom: 0px;
+  }
 `;
 const DoubleImageContainer = styled.div`
   width: 48%;
@@ -642,6 +676,10 @@ const PinkContainer = styled.div`
   }
   @media all and (max-width: 980px) {
     text-align: center;
+    height: 125px;
+  }
+  @media all and (max-width: 768px) {
+    height: 175px;
   }
 `;
 const PinkImageContainer = styled.span`
@@ -659,6 +697,9 @@ const PinkImageContainer = styled.span`
   @media all and (max-width: 1080px) {
     width: 30px;
   }
+  @media all and (max-width: 768px) {
+    width: 65px;
+  }
 `;
 const PinkImage = styled.img`
   width: 100%;
@@ -675,6 +716,9 @@ const PinkDelivery = styled.h6`
   @media all and (max-width: 1280px) {
     font-size: 13px;
   }
+  @media all and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 const PinkOrder = styled.h4`
   font-weight: 600;
@@ -685,6 +729,9 @@ const PinkOrder = styled.h4`
   }
   @media all and (max-width: 1280px) {
     font-size: 16px;
+  }
+  @media all and (max-width: 768px) {
+    font-size: 26px;
   }
 `;
 
@@ -715,6 +762,12 @@ const BlueContainer = styled.div`
     margin-bottom: 16px;
     text-align: center;
   }
+  @media all and (max-width: 980px) {
+    height: 125px;
+  }
+  @media all and (max-width: 768px) {
+    height: 175px;
+  }
 `;
 const BlueImageContainer = styled.span`
   display: inline-block;
@@ -730,6 +783,9 @@ const BlueImageContainer = styled.span`
   }
   @media all and (max-width: 1080px) {
     width: 30px;
+  }
+  @media all and (max-width: 768px) {
+    width: 65px;
   }
 `;
 const BlueImage = styled.img`
@@ -747,6 +803,9 @@ const BlueDelivery = styled.h6`
   @media all and (max-width: 1280px) {
     font-size: 13px;
   }
+  @media all and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 const BlueOrder = styled.h4`
   font-weight: 600;
@@ -756,6 +815,9 @@ const BlueOrder = styled.h4`
   }
   @media all and (max-width: 1280px) {
     font-size: 16px;
+  }
+  @media all and (max-width: 768px) {
+    font-size: 26px;
   }
 `;
 
@@ -770,6 +832,9 @@ const BlueGraphImageContainer = styled.div`
 
   @media all and (max-width: 1440px) {
     width: 50%;
+  }
+  @media all and (max-width: 980px) {
+    margin: 0 auto;
   }
 `;
 const BlueGraphImage = styled.img`
@@ -787,6 +852,10 @@ const MidBottomContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media all and (max-width: 768px) {
+    padding: 30px 40px 0px 40px;
+  }
 `;
 
 const MidLeftBox = styled.div`
@@ -797,6 +866,12 @@ const MidLeftBox = styled.div`
   }
   @media all and (max-width: 1280px) {
     width: 46%;
+  }
+  @media all and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 `;
 
@@ -811,6 +886,9 @@ const MidLeftHeading = styled.h5`
   @media all and (max-width: 1080px) {
     font-size: 16px;
   }
+  @media all and (max-width: 980px) {
+    font-size: 12px;
+  }
 `;
 
 const MidLeftImageContainer = styled.div`
@@ -820,6 +898,10 @@ const MidLeftImageContainer = styled.div`
 
   @media all and (max-width: 1280px) {
     width: 108px;
+  }
+  @media all and (max-width: 980px) {
+    margin-left: 0px;
+    width: 75px;
   }
 `;
 
@@ -839,6 +921,12 @@ const MidRightBox = styled.div`
     width: 46%;
     height: 290px;
   }
+  @media all and (max-width: 980px) {
+    justify-content: space-evenly;
+  }
+  @media all and (max-width: 768px) {
+    justify-content: ;
+  }
 `;
 
 const MidRightHeading = styled.h5`
@@ -851,6 +939,9 @@ const MidRightHeading = styled.h5`
   @media all and (max-width: 1080px) {
     font-size: 16px;
   }
+  @media all and (max-width: 980px) {
+    font-size: 12px;
+  }
 `;
 
 const MidRightImageContainer = styled.div`
@@ -859,6 +950,9 @@ const MidRightImageContainer = styled.div`
 
   @media all and (max-width: 1280px) {
     width: 160px;
+  }
+  @media all and (max-width: 980px) {
+    width: 100px;
   }
 `;
 
@@ -879,6 +973,10 @@ const RightAside = styled.div`
   }
   @media all and (max-width: 1440px) {
     padding: 38px 18px 11px 25px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -1004,6 +1102,10 @@ const ProductLeftHeading = styled.h4`
 const ProductRightHeading = styled.h4`
   font-size: 13px;
   font-weight: 600;
+
+  @media all and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 const RightAsideItemContainer = styled.ul`
@@ -1071,6 +1173,10 @@ const ItemRightDiv = styled.div``;
 const RightItemPrice = styled.span`
   display: inline-block;
   font-weight: 600;
+
+  @media all and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 const RightAsideBottomContainer = styled.div`
@@ -1087,6 +1193,9 @@ const HelpComment = styled.h3`
 const ChatContainer = styled.div`
   display: flex;
   align-content: center;
+  @media all and (max-width: 980px) {
+    flex-direction: column;
+  }
 `;
 
 const CommentBox = styled.div`
@@ -1107,6 +1216,10 @@ const CommentArrowImage = styled.img`
 const ChatRightImageContainer = styled.span`
   display: inline-block;
   width: 140px;
+
+  @media all and (max-width: 980px) {
+    width: 98px;
+  }
 `;
 const ChatRightImage = styled.img`
   width: 100%;

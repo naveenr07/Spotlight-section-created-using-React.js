@@ -8,7 +8,7 @@ import Hotselling from "./components/screens/Hotselling";
 import Order from "./components/screens/Order";
 import Payment from "./components/screens/Payments";
 import Setting from "./components/screens/Settings";
-// import Header from "./components/screens/Header/Header";
+import Header from "./components/screens/Header/Header";
 
 // import Index from "./pages/Index";
 

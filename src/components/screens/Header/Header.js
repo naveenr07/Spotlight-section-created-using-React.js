@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../App.css";
 
 function Header() {
   return (
@@ -6,7 +7,7 @@ function Header() {
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            Navbar
+            Business
           </a>
           <button
             class="navbar-toggler"
@@ -23,22 +24,37 @@ function Header() {
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
-                  Home
+                  Summary
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Features
+                  Products
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Pricing
+                  Hot Sellings
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Manage Order
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Payments
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Settings
+                </a>
+              </li>
+              {/* <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
