@@ -13,6 +13,14 @@ const Background = styled.div`
   top: 172px;
   left: 0px;
 
+  @media all and (max-width: 1440px) {
+    width: 71%;
+    height: 81%;
+    position: absolute;
+    top: 65px;
+    left: 285px;
+  }
+
   @media all and (max-width: 1380px) {
     width: 99%;
     height: 88%;

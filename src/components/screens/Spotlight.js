@@ -508,10 +508,10 @@ const Button = styled.button`
 
 const ArrowImageContainer = styled.span`
   display: inline-block;
-  width: 10px;
+  width: 13px;
   position: absolute;
-  top: 194px;
-  right: 58px;
+  top: 190px;
+  right: 49px;
 
   @media all and (max-width: 1440px) {
     width: 14px;
@@ -520,8 +520,8 @@ const ArrowImageContainer = styled.span`
   }
   @media all and (max-width: 1280px) {
     width: 13px;
-    right: 51px;
-    top: 179px;
+    right: 46px;
+    top: 178px;
   }
   @media all and (max-width: 1080px) {
     right: 46px;
@@ -576,7 +576,7 @@ const Form = styled.form`
   @media all and (max-width: 360px) {
     padding: 13px 12px;
     height: 36px;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
   }
 `;
 
@@ -683,12 +683,16 @@ const PinkContainer = styled.div`
   }
 
   @media all and (max-width: 1440px) {
-    height: 140px;
+    height: 160px;
     padding: 11px 20px;
   }
 
   @media all and (max-width: 1280px) {
-    height: 120px;
+    height: 110px;
+    padding: 7px 20px;
+  }
+  @media all and (max-width: 1380px) {
+    height: 140px;
     padding: 7px 20px;
   }
   @media all and (max-width: 1080px) {
@@ -771,12 +775,16 @@ const BlueContainer = styled.div`
   }
 
   @media all and (max-width: 1440px) {
-    height: 140px;
+    height: 160px;
     padding: 11px 20px;
+  }
+  @media all and (max-width: 1380px) {
+    height: 140px;
+    padding: 7px 20px;
   }
 
   @media all and (max-width: 1280px) {
-    height: 120px;
+    height: 110px;
     padding: 7px 20px;
   }
   @media all and (max-width: 1080px) {
@@ -1022,7 +1030,7 @@ const RightAside = styled.div`
     padding: 25px 18px 11px 18px;
   }
   @media all and (max-width: 1440px) {
-    padding: 38px 18px 11px 25px;
+    padding: 38px 18px 11px 40px;
   }
 
   @media all and (max-width: 768px) {
