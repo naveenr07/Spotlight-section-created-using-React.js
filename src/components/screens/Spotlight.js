@@ -557,6 +557,7 @@ const MidSection = styled.div`
 
   @media all and (max-width: 768px) {
     width: 100%;
+    padding: 32px 40px 1px 40px;
   }
 `;
 
@@ -836,6 +837,9 @@ const BlueGraphImageContainer = styled.div`
   @media all and (max-width: 980px) {
     margin: 0 auto;
   }
+  @media all and (max-width: 768px) {
+    width: 62%;
+  }
 `;
 const BlueGraphImage = styled.img`
   width: 100%;
@@ -855,6 +859,8 @@ const MidBottomContainer = styled.div`
 
   @media all and (max-width: 768px) {
     padding: 30px 40px 0px 40px;
+    margin: 0 auto;
+    width: 77%;
   }
 `;
 
@@ -871,7 +877,7 @@ const MidLeftBox = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
   }
 `;
 
@@ -888,6 +894,10 @@ const MidLeftHeading = styled.h5`
   }
   @media all and (max-width: 980px) {
     font-size: 12px;
+  }
+  @media all and (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
   }
 `;
 
@@ -925,7 +935,8 @@ const MidRightBox = styled.div`
     justify-content: space-evenly;
   }
   @media all and (max-width: 768px) {
-    justify-content: ;
+    justify-content: space-around;
+    align-items: center;
   }
 `;
 
@@ -941,6 +952,10 @@ const MidRightHeading = styled.h5`
   }
   @media all and (max-width: 980px) {
     font-size: 12px;
+  }
+  @media all and (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
   }
 `;
 
@@ -988,6 +1003,9 @@ const CartContainer = styled.div`
 
   @media all and (max-width: 1280px) {
     margin-bottom: 32px;
+  }
+  @media all and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -1094,10 +1112,14 @@ const ProductContainer = styled.div`
   @media all and (max-width: 1280px) {
     margin-bottom: 25px;
   }
+  @media all and (max-width: 980px) {
+    justify-content: center;
+  }
 `;
 const ProductLeftHeading = styled.h4`
   font-size: 22px;
   font-weight: 600;
+  text-align: center;
 `;
 const ProductRightHeading = styled.h4`
   font-size: 13px;
@@ -1105,6 +1127,9 @@ const ProductRightHeading = styled.h4`
 
   @media all and (max-width: 980px) {
     display: none;
+  }
+  @media all and (max-width: 768px) {
+    display: block;
   }
 `;
 
@@ -1129,7 +1154,11 @@ const RIghtItemContainer = styled.li`
   @media all and (max-width: 1280px) {
     margin-bottom: 30px;
   }
+  /* @media all and (max-width: 768px) {
+    justify-content: center;
+  } */
 `;
+
 const ItemLeftDiv = styled.div`
   display: flex;
   align-items: center;
