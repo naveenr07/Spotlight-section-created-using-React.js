@@ -92,237 +92,234 @@ function Spotlight() {
             </LeftContainerBottom>
           </LeftContainer>
         </LeftAside>
-        <MidSection>
-          <MiddleFormContainer>
-            <Form>
-              <Input type="text" placeholder="Search here" />
-              <SearchImageContainer>
-                <SearchImage
-                  src={require("../assets/images/search.svg").default}
-                />
-              </SearchImageContainer>
-            </Form>
-          </MiddleFormContainer>
-          <StaticContainer>
-            <StaticHeading>Statistics</StaticHeading>
-            <MonthBox>
-              <MonthCount>6 Months</MonthCount>
-              <MonthArrowImage>
-                <ArrowDownImage
-                  src={require("../assets/images/down-arrow.svg").default}
-                />
-              </MonthArrowImage>
-            </MonthBox>
-          </StaticContainer>
-          <ThreeImageContainer>
-            <DoubleImageContainer>
-              <PinkContainer>
-                <PinkImageContainer>
-                  <PinkImage
-                    src={require("../assets/images/vehicle.svg").default}
+        <MainMiddleContainer>
+          <MidSection>
+            <MiddleFormContainer>
+              <Form>
+                <Input type="text" placeholder="Search here" />
+                <SearchImageContainer>
+                  <SearchImage
+                    src={require("../assets/images/search.svg").default}
                   />
-                </PinkImageContainer>
-                <PinkDelivery>Awaiting Delivery</PinkDelivery>
-                <PinkOrder>150k Orders</PinkOrder>
-              </PinkContainer>
-              <BlueContainer>
-                <BlueImageContainer>
-                  <BlueImage
-                    src={require("../assets/images/vehicle.svg").default}
+                </SearchImageContainer>
+              </Form>
+            </MiddleFormContainer>
+            <StaticContainer>
+              <StaticHeading>Statistics</StaticHeading>
+              <MonthBox>
+                <MonthCount>6 Months</MonthCount>
+                <MonthArrowImage>
+                  <ArrowDownImage
+                    src={require("../assets/images/down-arrow.svg").default}
                   />
-                </BlueImageContainer>
-                <BlueDelivery>Awaiting Delivery</BlueDelivery>
-                <BlueOrder>150k Orders</BlueOrder>
-              </BlueContainer>
-            </DoubleImageContainer>
-            <BlueGraphImageContainer>
-              <BlueGraphImage
-                src={require("../assets/images/graph-blue.svg").default}
-              />
-            </BlueGraphImageContainer>
-          </ThreeImageContainer>
-          <MidBottomContainer>
-            <MidLeftBox>
-              <MidLeftHeading>
-                Create Ads for Your <br />
-                Business
-              </MidLeftHeading>
-              <MidLeftImageContainer>
-                <MidLeftImage
-                  src={require("../assets/images/admin.svg").default}
+                </MonthArrowImage>
+              </MonthBox>
+            </StaticContainer>
+            <ThreeImageContainer>
+              <DoubleImageContainer>
+                <PinkContainer>
+                  <PinkImageContainer>
+                    <PinkImage
+                      src={require("../assets/images/vehicle.svg").default}
+                    />
+                  </PinkImageContainer>
+                  <PinkDelivery>Awaiting Delivery</PinkDelivery>
+                  <PinkOrder>150k Orders</PinkOrder>
+                </PinkContainer>
+                <BlueContainer>
+                  <BlueImageContainer>
+                    <BlueImage
+                      src={require("../assets/images/vehicle.svg").default}
+                    />
+                  </BlueImageContainer>
+                  <BlueDelivery>Awaiting Delivery</BlueDelivery>
+                  <BlueOrder>150k Orders</BlueOrder>
+                </BlueContainer>
+              </DoubleImageContainer>
+              <BlueGraphImageContainer>
+                <BlueGraphImage
+                  src={require("../assets/images/graph-blue.svg").default}
                 />
-              </MidLeftImageContainer>
-            </MidLeftBox>
-            <MidRightBox>
-              <MidRightHeading>
-                Secure Your <br />
-                Payments
-              </MidRightHeading>
-              <MidRightImageContainer>
-                <MidRightImage
-                  src={
-                    require("../assets/images/businessman-single.svg").default
-                  }
-                />
-              </MidRightImageContainer>
-            </MidRightBox>
-          </MidBottomContainer>
-        </MidSection>
+              </BlueGraphImageContainer>
+            </ThreeImageContainer>
+            <MidBottomContainer>
+              <MidLeftBox>
+                <MidLeftHeading>
+                  Create Ads for Your <br />
+                  Business
+                </MidLeftHeading>
+                <MidLeftImageContainer>
+                  <MidLeftImage
+                    src={require("../assets/images/admin.svg").default}
+                  />
+                </MidLeftImageContainer>
+              </MidLeftBox>
+              <MidRightBox>
+                <MidRightHeading>
+                  Secure Your <br />
+                  Payments
+                </MidRightHeading>
+                <MidRightImageContainer>
+                  <MidRightImage
+                    src={
+                      require("../assets/images/businessman-single.svg").default
+                    }
+                  />
+                </MidRightImageContainer>
+              </MidRightBox>
+            </MidBottomContainer>
+          </MidSection>
 
-        {/* middle section completed */}
+          {/* middle section completed */}
 
-        <RightAside>
-          <CartContainer>
-            <CartLeft>
-              <OrangeRound>6</OrangeRound>
-              <BellImageContainer>
-                <BellImage src={require("../assets/images/bell.svg").default} />
-              </BellImageContainer>
-              <MessageImageContainer>
-                <MessageImage
-                  src={require("../assets/images/chat.svg").default}
-                />
-              </MessageImageContainer>
-            </CartLeft>
-            <CartRight>
-              <BoyImageContainer>
-                <BoyImage src={require("../assets/images/boy.jpg")} />
-              </BoyImageContainer>
-              <CartArrowImageContainer>
-                <CartArrowImage
-                  src={require("../assets/images/down-arrow.svg").default}
-                />
-              </CartArrowImageContainer>
-            </CartRight>
-          </CartContainer>
-          <ProductContainer>
-            <ProductLeftHeading>Hot SellingProducts</ProductLeftHeading>
-            <ProductRightHeading>See all</ProductRightHeading>
-          </ProductContainer>
-          <RightAsideItemContainer>
-            <RIghtItemContainer>
-              <ItemLeftDiv>
-                <RightAsideImageBox>
-                  <RightAsideImage
-                    src={require("../assets/images/wood-books.jpg")}
+          <RightAside>
+            <CartContainer>
+              <CartLeft>
+                <OrangeRound>6</OrangeRound>
+                <BellImageContainer>
+                  <BellImage
+                    src={require("../assets/images/bell.svg").default}
                   />
-                </RightAsideImageBox>
-                <RightItemDetailsBox>
-                  <RightAsideItemName>
-                    Dominoes Coffee Table Game
-                  </RightAsideItemName>
-                  <RightAsideItemSale> 50k Sales</RightAsideItemSale>
-                </RightItemDetailsBox>
-              </ItemLeftDiv>
-              <ItemRightDiv>
-                <RightItemPrice>$30</RightItemPrice>
-              </ItemRightDiv>
-            </RIghtItemContainer>
-            <RIghtItemContainer>
-              <ItemLeftDiv>
-                <RightAsideImageBox>
-                  <RightAsideImage
-                    src={require("../assets/images/black-box.jpg")}
+                </BellImageContainer>
+                <MessageImageContainer>
+                  <MessageImage
+                    src={require("../assets/images/chat.svg").default}
                   />
-                </RightAsideImageBox>
-                <RightItemDetailsBox>
-                  <RightAsideItemName>
-                    Photive Wireless Speakers
-                  </RightAsideItemName>
-                  <RightAsideItemSale> 44k Sales</RightAsideItemSale>
-                </RightItemDetailsBox>
-              </ItemLeftDiv>
-              <ItemRightDiv>
-                <RightItemPrice>$19</RightItemPrice>
-              </ItemRightDiv>
-            </RIghtItemContainer>
-            <RIghtItemContainer>
-              <ItemLeftDiv>
-                <RightAsideImageBox>
-                  <RightAsideImage
-                    src={require("../assets/images/speaker.jpg")}
+                </MessageImageContainer>
+              </CartLeft>
+              <CartRight>
+                <BoyImageContainer>
+                  <BoyImage src={require("../assets/images/boy.jpg")} />
+                </BoyImageContainer>
+                <CartArrowImageContainer>
+                  <CartArrowImage
+                    src={require("../assets/images/down-arrow.svg").default}
                   />
-                </RightAsideImageBox>
-                <RightItemDetailsBox>
-                  <RightAsideItemName>
-                    Urbanears Lotson Speaker
-                  </RightAsideItemName>
-                  <RightAsideItemSale>42k Sales</RightAsideItemSale>
-                </RightItemDetailsBox>
-              </ItemLeftDiv>
-              <ItemRightDiv>
-                <RightItemPrice>$79</RightItemPrice>
-              </ItemRightDiv>
-            </RIghtItemContainer>
-            <RIghtItemContainer>
-              <ItemLeftDiv>
-                <RightAsideImageBox>
-                  <RightAsideImage
-                    src={require("../assets/images/headphones 1.jpg")}
+                </CartArrowImageContainer>
+              </CartRight>
+            </CartContainer>
+            <ProductContainer>
+              <ProductLeftHeading>Hot SellingProducts</ProductLeftHeading>
+              <ProductRightHeading>See all</ProductRightHeading>
+            </ProductContainer>
+            <RightAsideItemContainer>
+              <RIghtItemContainer>
+                <ItemLeftDiv>
+                  <RightAsideImageBox>
+                    <RightAsideImage
+                      src={require("../assets/images/wood-books.jpg")}
+                    />
+                  </RightAsideImageBox>
+                  <RightItemDetailsBox>
+                    <RightAsideItemName>
+                      Dominoes Coffee Table Game
+                    </RightAsideItemName>
+                    <RightAsideItemSale> 50k Sales</RightAsideItemSale>
+                  </RightItemDetailsBox>
+                </ItemLeftDiv>
+                <ItemRightDiv>
+                  <RightItemPrice>$30</RightItemPrice>
+                </ItemRightDiv>
+              </RIghtItemContainer>
+              <RIghtItemContainer>
+                <ItemLeftDiv>
+                  <RightAsideImageBox>
+                    <RightAsideImage
+                      src={require("../assets/images/black-box.jpg")}
+                    />
+                  </RightAsideImageBox>
+                  <RightItemDetailsBox>
+                    <RightAsideItemName>
+                      Photive Wireless Speakers
+                    </RightAsideItemName>
+                    <RightAsideItemSale> 44k Sales</RightAsideItemSale>
+                  </RightItemDetailsBox>
+                </ItemLeftDiv>
+                <ItemRightDiv>
+                  <RightItemPrice>$19</RightItemPrice>
+                </ItemRightDiv>
+              </RIghtItemContainer>
+              <RIghtItemContainer>
+                <ItemLeftDiv>
+                  <RightAsideImageBox>
+                    <RightAsideImage
+                      src={require("../assets/images/speaker.jpg")}
+                    />
+                  </RightAsideImageBox>
+                  <RightItemDetailsBox>
+                    <RightAsideItemName>
+                      Urbanears Lotson Speaker
+                    </RightAsideItemName>
+                    <RightAsideItemSale>42k Sales</RightAsideItemSale>
+                  </RightItemDetailsBox>
+                </ItemLeftDiv>
+                <ItemRightDiv>
+                  <RightItemPrice>$79</RightItemPrice>
+                </ItemRightDiv>
+              </RIghtItemContainer>
+              <RIghtItemContainer>
+                <ItemLeftDiv>
+                  <RightAsideImageBox>
+                    <RightAsideImage
+                      src={require("../assets/images/headphones 1.jpg")}
+                    />
+                  </RightAsideImageBox>
+                  <RightItemDetailsBox>
+                    <RightAsideItemName>
+                      Platttan 2 Headphones
+                    </RightAsideItemName>
+                    <RightAsideItemSale> 38k Sales</RightAsideItemSale>
+                  </RightItemDetailsBox>
+                </ItemLeftDiv>
+                <ItemRightDiv>
+                  <RightItemPrice>$35</RightItemPrice>
+                </ItemRightDiv>
+              </RIghtItemContainer>
+              <RIghtItemContainer>
+                <ItemLeftDiv>
+                  <RIghtItemContainer>
+                    <ItemLeftDiv>
+                      <RightAsideImageBox>
+                        <RightAsideImage
+                          src={require("../assets/images/radio.jpg")}
+                        />
+                      </RightAsideImageBox>
+                      <RightItemDetailsBox>
+                        <RightAsideItemName>
+                          Solar Hand Crank Radio
+                        </RightAsideItemName>
+                        <RightAsideItemSale> 30k Sales</RightAsideItemSale>
+                      </RightItemDetailsBox>
+                    </ItemLeftDiv>
+                  </RIghtItemContainer>
+                </ItemLeftDiv>
+                <ItemRightDiv>
+                  <RightItemPrice>$30</RightItemPrice>
+                </ItemRightDiv>
+              </RIghtItemContainer>
+            </RightAsideItemContainer>
+            <RightAsideBottomContainer>
+              <HelpComment>
+                What can we help <br /> you with?
+              </HelpComment>
+              <ChatContainer>
+                <CommentBox>
+                  <Bot />
+                  <CommentArrowContainer>
+                    <CommentArrowImage
+                      src={require("../assets/images/down-arrow2.svg").default}
+                    />
+                  </CommentArrowContainer>
+                </CommentBox>
+                <ChatRightImageContainer>
+                  <ChatRightImage
+                    src={require("../assets/images/businessman-2.svg").default}
                   />
-                </RightAsideImageBox>
-                <RightItemDetailsBox>
-                  <RightAsideItemName>Platttan 2 Headphones</RightAsideItemName>
-                  <RightAsideItemSale> 38k Sales</RightAsideItemSale>
-                </RightItemDetailsBox>
-              </ItemLeftDiv>
-              <ItemRightDiv>
-                <RightItemPrice>$35</RightItemPrice>
-              </ItemRightDiv>
-            </RIghtItemContainer>
-            <RIghtItemContainer>
-              <ItemLeftDiv>
-                <RIghtItemContainer>
-                  <ItemLeftDiv>
-                    <RightAsideImageBox>
-                      <RightAsideImage
-                        src={require("../assets/images/radio.jpg")}
-                      />
-                    </RightAsideImageBox>
-                    <RightItemDetailsBox>
-                      <RightAsideItemName>
-                        Solar Hand Crank Radio
-                      </RightAsideItemName>
-                      <RightAsideItemSale> 30k Sales</RightAsideItemSale>
-                    </RightItemDetailsBox>
-                  </ItemLeftDiv>
-                </RIghtItemContainer>
-              </ItemLeftDiv>
-              <ItemRightDiv>
-                <RightItemPrice>$30</RightItemPrice>
-              </ItemRightDiv>
-            </RIghtItemContainer>
-          </RightAsideItemContainer>
-          <RightAsideBottomContainer>
-            <HelpComment>
-              What can we help <br /> you with?
-            </HelpComment>
-            <ChatContainer>
-              <CommentBox>
-                {/* chatbot  */}
-                {/* <BotContainer>
-                  <BotButton onClick={openBot}>chat with us </BotButton>
-                  <Chatbot showBot={showBot} setShowBot={setShowBot} />
-                  <GlobalStyle />
-                </BotContainer> */}
-                {/* chatbot end */}
-                {/* <Robot /> */}
-                <Bot />
-
-                <CommentArrowContainer>
-                  <CommentArrowImage
-                    src={require("../assets/images/down-arrow2.svg").default}
-                  />
-                </CommentArrowContainer>
-              </CommentBox>
-              <ChatRightImageContainer>
-                <ChatRightImage
-                  src={require("../assets/images/businessman-2.svg").default}
-                />
-              </ChatRightImageContainer>
-            </ChatContainer>
-          </RightAsideBottomContainer>
-        </RightAside>
+                </ChatRightImageContainer>
+              </ChatContainer>
+            </RightAsideBottomContainer>
+          </RightAside>
+        </MainMiddleContainer>
       </SpotlightContainer>{" "}
     </>
   );
@@ -338,33 +335,24 @@ const SpotlightContainer = styled.div`
 const LeftAside = styled.div`
   border-right: 2px solid #d9d9d9;
   width: 20%;
-  /* @media all and (max-width: 1280px) {
-    height: 100vh;
-  } */
-
-  /* @media all and (max-width: 1050px) {
-    display: none;
-  } */
 `;
 
 const LeftContainer = styled.div`
-  padding: 45px;
+  padding: 40px;
 
   @media all and (max-width: 1280px) {
     padding: 30px 18px;
   }
-  @media all and (max-width: 1050px) {
-    padding: 30px 10px;
+  @media all and (max-width: 1080px) {
+    padding: 46px 16px;
   }
-
-  padding: 22px 10px;
 `;
 const LogoContainer = styled.div`
   display: block;
   width: 140px;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 
-  @media all and (max-width: 1050px) {
+  @media all and (max-width: 1080px) {
     width: 120px;
   }
 `;
@@ -376,8 +364,12 @@ const Logo = styled.img`
 const LeftContainerTop = styled.div``;
 
 const ItemName = styled.h6`
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
+
+  @media all and (max-width: 980px) {
+    font-size: 14px;
+  }
 `;
 
 const ItemContainer = styled.div``;
@@ -397,15 +389,17 @@ const Items = styled(Link)`
     margin-bottom: 30px;
   }
 
+  @media all and (max-width: 980px) {
+    flex-direction: column-reverse;
+    margin-bottom: 8px;
+  }
+
   &:first-child {
     color: #323989;
     font-weight: bold;
   }
   &:last-child {
     margin-bottom: 0;
-  }
-  @media all and (max-width: 1050px) {
-    display: block;
   }
 `;
 
@@ -418,7 +412,7 @@ const ItemImage = styled.img`
 `;
 
 const LeftContainerBottom = styled.div`
-  height: 465px;
+  height: 430px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -443,6 +437,10 @@ const GraphImageBox = styled.div`
   display: block;
   width: 125px;
   margin-bottom: 15px;
+
+  @media all and (max-width: 980px) {
+    width: 86px;
+  }
 `;
 
 const GraphImage = styled.img`
@@ -462,7 +460,7 @@ const Button = styled.button`
   padding: 11px 40px;
   border-radius: 10px;
   background: #323989;
-  display: inline-block;
+  display: block;
   font-weight: 700;
   margin: 0 auto;
 
@@ -477,14 +475,40 @@ const Button = styled.button`
   @media all and (max-width: 1280px) {
     font-size: 12px;
   }
+  @media all and (max-width: 1440px) {
+    padding: 11px 32px;
+  }
+  @media all and (max-width: 980px) {
+    padding: 7px 20px;
+  }
+  padding: 7px 20px;
 `;
 
 const ArrowImageContainer = styled.span`
   display: inline-block;
   width: 10px;
   position: absolute;
-  top: 200px;
+  top: 194px;
   right: 58px;
+
+  @media all and (max-width: 1440px) {
+    width: 14px;
+    right: 48px;
+    top: 193px;
+  }
+  @media all and (max-width: 1280px) {
+    width: 13px;
+    right: 51px;
+    top: 179px;
+  }
+  @media all and (max-width: 1080px) {
+    right: 46px;
+  }
+  @media all and (max-width: 1080px) {
+    right: 26px;
+    width: 12px;
+    top: 165px;
+  }
 `;
 const ArrowImage = styled.img`
   width: 100%;
@@ -494,8 +518,14 @@ const ArrowImage = styled.img`
 
 // LeftAside section completed//
 
+const MainMiddleContainer = styled.div`
+  width: 80%;
+  display: flex;
+  justify-content: center;
+`;
+
 const MidSection = styled.div`
-  width: 45%;
+  width: 56%;
   padding: 32px 40px;
 `;
 
@@ -509,7 +539,7 @@ const Form = styled.form`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 `;
 
 const Input = styled.input`
@@ -536,7 +566,7 @@ const StaticContainer = styled.div`
 
 const StaticHeading = styled.h5`
   font-weight: 600;
-  font-size: 24px;
+  font-size: 26px;
 `;
 
 const MonthBox = styled.div`
@@ -571,12 +601,18 @@ const ThreeImageContainer = styled.div`
   @media all and (max-width: 1440px) {
     margin-bottom: 90px;
   }
+  @media all and (max-width: 980px) {
+    display: block;
+  }
 `;
 const DoubleImageContainer = styled.div`
   width: 48%;
 
   @media all and (max-width: 1440px) {
     width: 45%;
+  }
+  @media all and (max-width: 980px) {
+    display: contents;
   }
 `;
 const PinkContainer = styled.div`
@@ -597,8 +633,15 @@ const PinkContainer = styled.div`
   }
 
   @media all and (max-width: 1280px) {
-    height: 110px;
-    padding: 11px 20px;
+    height: 120px;
+    padding: 7px 20px;
+  }
+  @media all and (max-width: 1080px) {
+    height: 100px;
+    margin-bottom: 18px;
+  }
+  @media all and (max-width: 980px) {
+    text-align: center;
   }
 `;
 const PinkImageContainer = styled.span`
@@ -612,6 +655,9 @@ const PinkImageContainer = styled.span`
   }
   @media all and (max-width: 1280px) {
     width: 35px;
+  }
+  @media all and (max-width: 1080px) {
+    width: 30px;
   }
 `;
 const PinkImage = styled.img`
@@ -659,8 +705,15 @@ const BlueContainer = styled.div`
   }
 
   @media all and (max-width: 1280px) {
-    height: 110px;
-    padding: 11px 20px;
+    height: 120px;
+    padding: 7px 20px;
+  }
+  @media all and (max-width: 1080px) {
+    height: 100px;
+  }
+  @media all and (max-width: 980px) {
+    margin-bottom: 16px;
+    text-align: center;
   }
 `;
 const BlueImageContainer = styled.span`
@@ -674,6 +727,9 @@ const BlueImageContainer = styled.span`
   }
   @media all and (max-width: 1280px) {
     width: 35px;
+  }
+  @media all and (max-width: 1080px) {
+    width: 30px;
   }
 `;
 const BlueImage = styled.img`
@@ -707,6 +763,11 @@ const BlueGraphImageContainer = styled.div`
   width: 48%;
   display: block;
 
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+
   @media all and (max-width: 1440px) {
     width: 50%;
   }
@@ -715,6 +776,10 @@ const BlueGraphImage = styled.img`
   width: 100%;
   display: block;
   border-radius: 12px;
+  &:hover {
+    transform: scale(1);
+    transition-duration: 0.5s;
+  }
 `;
 
 const MidBottomContainer = styled.div`
@@ -742,6 +807,9 @@ const MidLeftHeading = styled.h5`
 
   @media all and (max-width: 1280px) {
     font-size: 18px;
+  }
+  @media all and (max-width: 1080px) {
+    font-size: 16px;
   }
 `;
 
@@ -780,6 +848,9 @@ const MidRightHeading = styled.h5`
   @media all and (max-width: 1280px) {
     font-size: 18px;
   }
+  @media all and (max-width: 1080px) {
+    font-size: 16px;
+  }
 `;
 
 const MidRightImageContainer = styled.div`
@@ -800,11 +871,14 @@ const MidRightImage = styled.img`
 
 const RightAside = styled.div`
   background: #f1f1f3;
-  width: 35%;
+  width: 44%;
   padding: 38px 30px 11px 58px;
 
   @media all and (max-width: 1280px) {
     padding: 25px 18px 11px 18px;
+  }
+  @media all and (max-width: 1440px) {
+    padding: 38px 18px 11px 25px;
   }
 `;
 
@@ -935,6 +1009,10 @@ const ProductRightHeading = styled.h4`
 const RightAsideItemContainer = styled.ul`
   margin-bottom: 28px;
   padding-left: 0;
+
+  @media all and (max-width: 1440px) {
+    margin-bottom: 60px;
+  }
 `;
 
 const RIghtItemContainer = styled.li`
@@ -958,6 +1036,15 @@ const RightAsideImageBox = styled.span`
   display: inline-block;
   width: 80px;
   margin-right: 18px;
+  @media all and (max-width: 1440px) {
+    width: 70px;
+    margin-right: 14px;
+  }
+
+  @media all and (max-width: 1280px) {
+    width: 79px;
+    margin-right: 19px;
+  }
 `;
 const RightAsideImage = styled.img`
   width: 100%;
@@ -969,6 +1056,11 @@ const RightItemDetailsBox = styled.div``;
 const RightAsideItemName = styled.h4`
   font-size: 16px;
   font-weight: 600;
+  @media all and (max-width: 1280px) {
+    font-size: 14px;
+    width: 155px;
+    font-weight: 600;
+  }
 `;
 const RightAsideItemSale = styled.span`
   display: inline-block;
