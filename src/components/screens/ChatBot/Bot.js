@@ -39,6 +39,9 @@ const Button = styled.button`
   @media all and (max-width: 1280px) {
     font-size: 14px;
   }
+  @media all and (max-width: 768px) {
+    font-size: 20px;
+  }
 
   &:hover {
     transform: scale(0.8);

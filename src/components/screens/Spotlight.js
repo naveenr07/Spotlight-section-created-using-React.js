@@ -572,16 +572,29 @@ const Form = styled.form`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+
+  @media all and (max-width: 360px) {
+    padding: 13px 12px;
+    height: 36px;
+    margin-bottom: 28px;
+  }
 `;
 
 const Input = styled.input`
   font-size: 15px;
   font-weight: 600;
   color: #ada9a9;
+
+  @media all and (max-width: 360px) {
+    font-size: 12px;
+  }
 `;
 
 const SearchImageContainer = styled.span`
   width: 24px;
+  @media all and (max-width: 360px) {
+    width: 15px;
+  }
 `;
 
 const SearchImage = styled.img`
@@ -594,6 +607,10 @@ const StaticContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  @media all and (max-width: 360px) {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const StaticHeading = styled.h5`
@@ -604,6 +621,9 @@ const StaticHeading = styled.h5`
 const MonthBox = styled.div`
   display: flex;
   align-items: center;
+  @media all and (max-width: 360px) {
+    display: none;
+  }
 `;
 
 const MonthCount = styled.span`
@@ -680,6 +700,9 @@ const PinkContainer = styled.div`
     height: 125px;
   }
   @media all and (max-width: 768px) {
+    height: 175px;
+  }
+  @media all and (max-width: 480px) {
     height: 175px;
   }
 `;
@@ -840,6 +863,9 @@ const BlueGraphImageContainer = styled.div`
   @media all and (max-width: 768px) {
     width: 62%;
   }
+  @media all and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 const BlueGraphImage = styled.img`
   width: 100%;
@@ -861,6 +887,9 @@ const MidBottomContainer = styled.div`
     padding: 30px 40px 0px 40px;
     margin: 0 auto;
     width: 77%;
+  }
+  @media all and (max-width: 480px) {
+    padding: 5px;
   }
 `;
 
@@ -898,6 +927,9 @@ const MidLeftHeading = styled.h5`
   @media all and (max-width: 768px) {
     font-size: 16px;
     text-align: center;
+  }
+  @media all and (max-width: 480px) {
+    font-size: 13px;
   }
 `;
 
@@ -956,6 +988,9 @@ const MidRightHeading = styled.h5`
   @media all and (max-width: 768px) {
     font-size: 16px;
     text-align: center;
+  }
+  @media all and (max-width: 480px) {
+    font-size: 13px;
   }
 `;
 
@@ -1115,11 +1150,20 @@ const ProductContainer = styled.div`
   @media all and (max-width: 980px) {
     justify-content: center;
   }
+  @media all and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 const ProductLeftHeading = styled.h4`
   font-size: 22px;
   font-weight: 600;
   text-align: center;
+  @media all and (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media all and (max-width: 480px) {
+    font-size: 26px;
+  }
 `;
 const ProductRightHeading = styled.h4`
   font-size: 13px;
@@ -1128,9 +1172,9 @@ const ProductRightHeading = styled.h4`
   @media all and (max-width: 980px) {
     display: none;
   }
-  @media all and (max-width: 768px) {
+  /* @media all and (max-width: 768px) {
     display: block;
-  }
+  } */
 `;
 
 const RightAsideItemContainer = styled.ul`
@@ -1139,6 +1183,10 @@ const RightAsideItemContainer = styled.ul`
 
   @media all and (max-width: 1440px) {
     margin-bottom: 60px;
+  }
+  @media all and (max-width: 480px) {
+    text-align: center;
+    margin-bottom: 30px;
   }
 `;
 
@@ -1154,14 +1202,17 @@ const RIghtItemContainer = styled.li`
   @media all and (max-width: 1280px) {
     margin-bottom: 30px;
   }
-  /* @media all and (max-width: 768px) {
-    justify-content: center;
-  } */
+  @media all and (max-width: 768px) {
+    justify-content: space-evenly;
+  }
 `;
 
 const ItemLeftDiv = styled.div`
   display: flex;
   align-items: center;
+  @media all and (max-width: 480px) {
+    flex-direction: column-reverse;
+  }
 `;
 const RightAsideImageBox = styled.span`
   display: inline-block;
@@ -1176,13 +1227,27 @@ const RightAsideImageBox = styled.span`
     width: 79px;
     margin-right: 19px;
   }
+  @media all and (max-width: 768px) {
+    width: 125px;
+  }
+
+  @media all and (max-width: 640px) {
+    width: 78px;
+  }
+  @media all and (max-width: 480px) {
+    width: 140px;
+  }
 `;
 const RightAsideImage = styled.img`
   width: 100%;
   display: block;
   border-radius: 12px;
 `;
-const RightItemDetailsBox = styled.div``;
+const RightItemDetailsBox = styled.div`
+  @media all and (max-width: 480px) {
+    margin-bottom: 15px;
+  }
+`;
 
 const RightAsideItemName = styled.h4`
   font-size: 16px;
@@ -1191,6 +1256,15 @@ const RightAsideItemName = styled.h4`
     font-size: 14px;
     width: 155px;
     font-weight: 600;
+  }
+  @media all and (max-width: 768px) {
+    font-size: 20px;
+    width: 300px;
+    font-weight: 600;
+  }
+  @media all and (max-width: 640px) {
+    font-size: 15px;
+    width: 262px;
   }
 `;
 const RightAsideItemSale = styled.span`
@@ -1206,6 +1280,13 @@ const RightItemPrice = styled.span`
   @media all and (max-width: 980px) {
     display: none;
   }
+  @media all and (max-width: 768px) {
+    display: block;
+    justify-content: space-evenly;
+  }
+  @media all and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const RightAsideBottomContainer = styled.div`
@@ -1218,6 +1299,19 @@ const HelpComment = styled.h3`
   @media all and (max-width: 1280px) {
     font-size: 16px;
   }
+  @media all and (max-width: 768px) {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  @media all and (max-width: 640px) {
+    text-align: center;
+    font-size: 22px;
+  }
+  @media all and (max-width: 360px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 `;
 const ChatContainer = styled.div`
   display: flex;
@@ -1225,11 +1319,17 @@ const ChatContainer = styled.div`
   @media all and (max-width: 980px) {
     flex-direction: column;
   }
+  @media all and (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const CommentBox = styled.div`
   display: flex;
   align-items: center;
+  @media all and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const CommentArrowContainer = styled.div`
@@ -1237,6 +1337,10 @@ const CommentArrowContainer = styled.div`
   transform: rotate(270deg);
   width: 17px;
   margin-right: 70px;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
 `;
 const CommentArrowImage = styled.img`
   width: 100%;
@@ -1248,6 +1352,18 @@ const ChatRightImageContainer = styled.span`
 
   @media all and (max-width: 980px) {
     width: 98px;
+  }
+  @media all and (max-width: 768px) {
+    width: 300px;
+  }
+  @media all and (max-width: 640px) {
+    width: 210px;
+  }
+  @media all and (max-width: 480px) {
+    width: 140px;
+  }
+  @media all and (max-width: 360px) {
+    width: 105px;
   }
 `;
 const ChatRightImage = styled.img`
