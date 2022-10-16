@@ -338,9 +338,13 @@ const SpotlightContainer = styled.div`
 const LeftAside = styled.div`
   border-right: 2px solid #d9d9d9;
   width: 20%;
-  @media all and (max-width: 1280px) {
+  /* @media all and (max-width: 1280px) {
     height: 100vh;
-  }
+  } */
+
+  /* @media all and (max-width: 1050px) {
+    display: none;
+  } */
 `;
 
 const LeftContainer = styled.div`
@@ -349,11 +353,20 @@ const LeftContainer = styled.div`
   @media all and (max-width: 1280px) {
     padding: 30px 18px;
   }
+  @media all and (max-width: 1050px) {
+    padding: 30px 10px;
+  }
+
+  padding: 22px 10px;
 `;
 const LogoContainer = styled.div`
   display: block;
   width: 140px;
   margin-bottom: 45px;
+
+  @media all and (max-width: 1050px) {
+    width: 120px;
+  }
 `;
 const Logo = styled.img`
   display: block;
@@ -390,6 +403,9 @@ const Items = styled(Link)`
   }
   &:last-child {
     margin-bottom: 0;
+  }
+  @media all and (max-width: 1050px) {
+    display: block;
   }
 `;
 
