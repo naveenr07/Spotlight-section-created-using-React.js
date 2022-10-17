@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import Index from "../../pages/Index";
 
 function Order() {
   return (
@@ -9,6 +10,7 @@ function Order() {
       <Helmet>
         <title> Manage Orders</title>
       </Helmet>
+      <Index />
       <OrderContainer>
         <OrderTitle>MANAGE ORDERS</OrderTitle>
         <OrderBody>
@@ -34,9 +36,7 @@ const OrderTitle = styled.h1`
 `;
 const OrderBody = styled.div`
   display: block;
-  width: 630px;
-  height: 619px;
-  margin: 0 auto;
+  width: 100%;
 `;
 const OrderImage = styled.img`
   width: 100%;

@@ -8,9 +8,10 @@ import Hotselling from "./components/screens/Hotselling";
 import Order from "./components/screens/Order";
 import Payment from "./components/screens/Payments";
 import Setting from "./components/screens/Settings";
-import Header from "./components/screens/Header/Header";
+// import Header from "./components/screens/Header/Header";
 
 // import Index from "./pages/Index";
+// Routes, Route
 
 function App() {
   return (
@@ -19,7 +20,6 @@ function App() {
         <Routes>
           <Route>
             <Route exact path="/" element={<Spotlight />} />
-
             <Route exact path="*" element={<PageNotFound />} />
 
             <Route exact path="/summary" element={<Summary />} />
@@ -34,7 +34,6 @@ function App() {
 
             <Route exact path="/settings" element={<Setting />} />
 
-            {/* <Index /> */}
             {/* <Header /> */}
           </Route>
         </Routes>

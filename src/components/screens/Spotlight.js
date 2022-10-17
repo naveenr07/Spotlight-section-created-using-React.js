@@ -4,7 +4,8 @@ import "../../App.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Bot from "../screens/ChatBot/Bot";
-import Header from "../screens/Header/Header";
+// import Header from "../screens/Header/Header";
+import Index from "../../pages/Index";
 
 function Spotlight() {
   return (
@@ -13,7 +14,8 @@ function Spotlight() {
         <title>My Title</title>
       </Helmet>
       {/* Header section  */}
-      <Header />
+      {/* <Header /> */}
+      <Index />
       {/* Header completed */}
       <SpotlightContainer>
         {/* LeftAside section */}
@@ -467,6 +469,12 @@ const Items = styled(Link)`
 
 const ItemImageContainer = styled.span`
   display: inline-block;
+  &:hover {
+    transform: scale(1.6);
+    transition-duration: 0.5s;
+    background: #fff;
+    color: #000;
+  }
 `;
 const ItemImage = styled.img`
   width: 100%;
@@ -610,6 +618,7 @@ const Form = styled.form`
   padding: 13px 18px;
   height: 50px;
   display: flex;
+  color: #ada9a9;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -632,7 +641,9 @@ const Input = styled.input`
 `;
 
 const SearchImageContainer = styled.span`
+  display: inline-block;
   width: 24px;
+  color: #ada9a9;
   @media all and (max-width: 360px) {
     width: 15px;
   }
@@ -1249,7 +1260,7 @@ const RIghtItemContainer = styled.li`
     margin-bottom: 30px;
   }
   @media all and (max-width: 768px) {
-    justify-content: space-evenly;
+    justify-content: center;
   }
 `;
 

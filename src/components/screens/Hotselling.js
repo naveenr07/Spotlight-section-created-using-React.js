@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import Index from "../../pages/Index";
 
 function Hotselling() {
   return (
@@ -8,9 +9,12 @@ function Hotselling() {
       <Helmet>
         <title> Hot Selling</title>
       </Helmet>
+      <Index />
       <HotsellingContainer>
         <Name>HOT SELLINGS</Name>
-        <Image src={require("../assets/images/hotselling.jpg")} />
+        <ImageBox>
+          <Image src={require("../assets/images/hotselling.jpg")} />
+        </ImageBox>
       </HotsellingContainer>
     </>
   );
@@ -25,12 +29,15 @@ const HotsellingContainer = styled.div`
 `;
 
 const Name = styled.h1`
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   font-weight: 600;
   font-size: 50px;
+  /* display: inline-block; */
 `;
-
+const ImageBox = styled.div`
+  width: 100%;
+`;
 const Image = styled.img`
   width: 100%;
   display: block;

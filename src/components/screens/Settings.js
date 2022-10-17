@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import Index from "../../pages/Index";
 
 function Setting() {
   return (
@@ -8,6 +9,7 @@ function Setting() {
       <Helmet>
         <title>Settings</title>
       </Helmet>
+      <Index />
       <SettingContainer>
         <SettingTitle>SETTINGS</SettingTitle>
         <SettingBody>

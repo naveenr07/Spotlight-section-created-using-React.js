@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import Index from "../../pages/Index";
 
 function Summary() {
   return (
@@ -8,6 +9,7 @@ function Summary() {
       <Helmet>
         <title>Summary</title>
       </Helmet>
+      <Index />
       <SummaryContainer>
         <SummaryTitle>SUMMARY</SummaryTitle>
         <SummaryBody>
@@ -33,11 +35,10 @@ const SummaryTitle = styled.h1`
 `;
 const SummaryBody = styled.div`
   display: block;
-  width: 630px;
-  height: 619px;
-  margin: 0 auto;
+  width: 100%;
 `;
 const SummaryImage = styled.img`
   width: 100%;
+  height: 100%;
   display: block;
 `;

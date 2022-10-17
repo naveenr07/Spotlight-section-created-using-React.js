@@ -44,7 +44,7 @@ const Button = styled.button`
   }
 
   &:hover {
-    transform: scale(0.8);
+    transform: scale(1);
     transition-duration: 0.5s;
     background: #fff;
     color: #000;

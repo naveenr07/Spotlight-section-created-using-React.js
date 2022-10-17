@@ -2,6 +2,53 @@ import React, { useRef, useEffect, useCallback } from "react";
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 
+export const Chatbot = ({ showBot, setShowBot }) => {
+  const botRef = useRef();
+
+  const closeBot = (e) => {
+    if (botRef.current === e.target) {
+      setShowBot(false);
+    }
+  };
+
+  const keyPress = useCallback(
+    (e) => {
+      if (e.key === "Escape" && showBot) {
+        setShowBot(false);
+        console.log("I pressed");
+      }
+    },
+    [setShowBot, showBot]
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", keyPress);
+    return () => document.removeEventListener("keydown", keyPress);
+  }, [keyPress]);
+
+  return (
+    <>
+      {showBot ? (
+        // <Background>
+        <Background onClick={closeBot} ref={botRef}>
+          <BotWrapper showBot={showBot}>
+            <BotImg src={require("../../assets/images/bot.jpg")} alt="bot" />
+            <BotContent>
+              <h1>Welcome</h1>
+              <p>We're here to assist you</p>
+              <button>Click here</button>
+            </BotContent>
+            <CloseBotButton
+              aria-label="Close Bot"
+              onClick={() => setShowBot((prev) => !prev)}
+            />
+          </BotWrapper>
+        </Background>
+      ) : null}
+    </>
+  );
+};
+
 const Background = styled.div`
   background: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -104,6 +151,9 @@ const BotContent = styled.div`
       font-weight: 500;
       font-size: 12px;
     }
+    @media all and (max-width: 360px) {
+      font-size: 8px;
+    }
   }
 
   button {
@@ -152,50 +202,3 @@ const CloseBotButton = styled(MdClose)`
     right: 6px;
   }
 `;
-
-export const Chatbot = ({ showBot, setShowBot }) => {
-  const botRef = useRef();
-
-  const closeBot = (e) => {
-    if (botRef.current === e.target) {
-      setShowBot(false);
-    }
-  };
-
-  const keyPress = useCallback(
-    (e) => {
-      if (e.key === "Escape" && showBot) {
-        setShowBot(false);
-        console.log("I pressed");
-      }
-    },
-    [setShowBot, showBot]
-  );
-
-  useEffect(() => {
-    document.addEventListener("keydown", keyPress);
-    return () => document.removeEventListener("keydown", keyPress);
-  }, [keyPress]);
-
-  return (
-    <>
-      {showBot ? (
-        // <Background>
-        <Background onClick={closeBot} ref={botRef}>
-          <BotWrapper showBot={showBot}>
-            <BotImg src={require("../../assets/images/bot.jpg")} alt="bot" />
-            <BotContent>
-              <h1>Welcome</h1>
-              <p>We're here to assist you</p>
-              <button>Join Now</button>
-            </BotContent>
-            <CloseBotButton
-              aria-label="Close Bot"
-              onClick={() => setShowBot((prev) => !prev)}
-            />
-          </BotWrapper>
-        </Background>
-      ) : null}
-    </>
-  );
-};

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import Index from "../../pages/Index";
 
 function Payment() {
   return (
@@ -8,6 +9,7 @@ function Payment() {
       <Helmet>
         <title>Payments</title>
       </Helmet>
+      <Index />
       <PaymentContainer>
         <PaymentTitle>PAYMENTS</PaymentTitle>
         <PaymentBody>
@@ -33,12 +35,9 @@ const PaymentTitle = styled.h1`
 `;
 const PaymentBody = styled.div`
   display: block;
-  width: 930px;
-  height: 619px;
-  margin: 0 auto;
+  width: 100%;
 `;
 const PaymentImage = styled.img`
   width: 100%;
   display: block;
-  border-radius: 20px;
 `;
