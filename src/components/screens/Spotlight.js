@@ -11,7 +11,7 @@ function Spotlight() {
   return (
     <>
       <Helmet>
-        <title>My Title</title>
+        <title>Home</title>
       </Helmet>
       {/* Header section  */}
       {/* <Header /> */}
