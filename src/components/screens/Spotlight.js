@@ -633,7 +633,11 @@ const Form = styled.form`
 const Input = styled.input`
   font-size: 15px;
   font-weight: 600;
-  color: #ada9a9;
+  color: #000;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 
   @media all and (max-width: 360px) {
     font-size: 12px;
