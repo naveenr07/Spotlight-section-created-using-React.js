@@ -14,26 +14,16 @@ const Background = styled.div`
   left: 0px;
 
   @media all and (max-width: 1440px) {
-    width: 71%;
-    height: 81%;
+    width: 90%;
+    height: 56%;
     position: absolute;
-    top: 65px;
-    left: 285px;
+    top: 72px;
+    left: 26px;
   }
 
-  @media all and (max-width: 1380px) {
-    width: 99%;
-    height: 88%;
-    position: absolute;
-    top: 154px;
-    left: 0px;
-  }
-  @media all and (max-width: 1280px) {
-    width: 98%;
-    height: 88%;
-    position: absolute;
-    top: 50px;
-    left: 6px;
+  @media all and (max-width: 768px) {
+    /* width: 491px;
+    height: 310px; */
   }
 `;
 
@@ -48,6 +38,16 @@ const BotWrapper = styled.div`
   position: relative;
   z-index: 10;
   border-radius: 10px;
+
+  @media all and (max-width: 1080px) {
+    width: 661px;
+    height: 406px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: 491px;
+    height: 310px;
+  }
 `;
 
 const BotImg = styled.img`

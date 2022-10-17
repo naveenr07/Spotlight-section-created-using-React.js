@@ -527,9 +527,9 @@ const ArrowImageContainer = styled.span`
     right: 46px;
   }
   @media all and (max-width: 1080px) {
-    right: 26px;
-    width: 12px;
-    top: 165px;
+    right: 46px;
+    width: 11px;
+    top: 179px;
   }
 `;
 const ArrowImage = styled.img`
@@ -1030,7 +1030,7 @@ const RightAside = styled.div`
     padding: 25px 18px 11px 18px;
   }
   @media all and (max-width: 1440px) {
-    padding: 38px 18px 11px 40px;
+    padding: 38px 18px 11px 22px;
   }
 
   @media all and (max-width: 768px) {
