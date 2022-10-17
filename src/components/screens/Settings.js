@@ -23,6 +23,13 @@ export default Setting;
 const SettingContainer = styled.div`
   padding: 30px;
   background: #8dc73f;
+  width: 100%;
+  height: 746px;
+
+  @media all and (max-width: 360px) {
+    width: 722px;
+    height: 747px;
+  }
 `;
 const SettingTitle = styled.h1`
   text-align: center;

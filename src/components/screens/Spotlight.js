@@ -12,12 +12,18 @@ function Spotlight() {
       <Helmet>
         <title>My Title</title>
       </Helmet>
+      {/* Header section  */}
       <Header />
+      {/* Header completed */}
       <SpotlightContainer>
+        {/* LeftAside section */}
         <LeftAside>
           <LeftContainer>
             <LogoContainer>
-              <Logo src={require("../assets/images/logo.svg").default} />
+              <Logo
+                src={require("../assets/images/logo.svg").default}
+                alt="logo"
+              />
             </LogoContainer>
             <LeftContainerTop>
               <ItemContainer>
@@ -28,6 +34,7 @@ function Spotlight() {
                     <ItemImageContainer>
                       <ItemImage
                         src={require("../assets/images/book.svg").default}
+                        alt="summaty"
                       />
                     </ItemImageContainer>
                   </Items>
@@ -36,6 +43,7 @@ function Spotlight() {
                     <ItemImageContainer>
                       <ItemImage
                         src={require("../assets/images/slide.svg").default}
+                        alt="product"
                       />
                     </ItemImageContainer>
                   </Items>{" "}
@@ -44,6 +52,7 @@ function Spotlight() {
                     <ItemImageContainer>
                       <ItemImage
                         src={require("../assets/images/fire.svg").default}
+                        alt="hetsellings"
                       />
                     </ItemImageContainer>
                   </Items>{" "}
@@ -52,6 +61,7 @@ function Spotlight() {
                     <ItemImageContainer>
                       <ItemImage
                         src={require("../assets/images/oder.svg").default}
+                        alt="order"
                       />
                     </ItemImageContainer>
                   </Items>{" "}
@@ -60,6 +70,7 @@ function Spotlight() {
                     <ItemImageContainer>
                       <ItemImage
                         src={require("../assets/images/wallet.svg").default}
+                        alt="payment"
                       />
                     </ItemImageContainer>
                   </Items>
@@ -68,6 +79,7 @@ function Spotlight() {
                     <ItemImageContainer>
                       <ItemImage
                         src={require("../assets/images/settings.svg").default}
+                        alt="settings"
                       />
                     </ItemImageContainer>
                   </Items>
@@ -79,6 +91,7 @@ function Spotlight() {
                 <GraphImageBox>
                   <GraphImage
                     src={require("../assets/images/graph-lap.svg").default}
+                    alt="graph-image"
                   />
                 </GraphImageBox>
                 <H3Container>
@@ -88,12 +101,16 @@ function Spotlight() {
                 <ArrowImageContainer>
                   <ArrowImage
                     src={require("../assets/images/right-arrow.svg").default}
+                    alt="arrow-image"
                   />
                 </ArrowImageContainer>
               </GrayContainer>
             </LeftContainerBottom>
           </LeftContainer>
         </LeftAside>
+        {/* LeftAside section completed */}
+
+        {/* MainMiddleContainer section  */}
         <MainMiddleContainer>
           <MidSection>
             <MiddleFormContainer>
@@ -102,6 +119,7 @@ function Spotlight() {
                 <SearchImageContainer>
                   <SearchImage
                     src={require("../assets/images/search.svg").default}
+                    alt="search-image"
                   />
                 </SearchImageContainer>
               </Form>
@@ -113,6 +131,7 @@ function Spotlight() {
                 <MonthArrowImage>
                   <ArrowDownImage
                     src={require("../assets/images/down-arrow.svg").default}
+                    alt="arrow-image"
                   />
                 </MonthArrowImage>
               </MonthBox>
@@ -123,6 +142,7 @@ function Spotlight() {
                   <PinkImageContainer>
                     <PinkImage
                       src={require("../assets/images/vehicle.svg").default}
+                      alt="vehicle"
                     />
                   </PinkImageContainer>
                   <PinkDelivery>Awaiting Delivery</PinkDelivery>
@@ -132,6 +152,7 @@ function Spotlight() {
                   <BlueImageContainer>
                     <BlueImage
                       src={require("../assets/images/vehicle.svg").default}
+                      alt="logo"
                     />
                   </BlueImageContainer>
                   <BlueDelivery>Awaiting Delivery</BlueDelivery>
@@ -141,6 +162,7 @@ function Spotlight() {
               <BlueGraphImageContainer>
                 <BlueGraphImage
                   src={require("../assets/images/graph-blue.svg").default}
+                  alt="blue-graph-image"
                 />
               </BlueGraphImageContainer>
             </ThreeImageContainer>
@@ -153,6 +175,7 @@ function Spotlight() {
                 <MidLeftImageContainer>
                   <MidLeftImage
                     src={require("../assets/images/admin.svg").default}
+                    alt="admin-image"
                   />
                 </MidLeftImageContainer>
               </MidLeftBox>
@@ -166,6 +189,7 @@ function Spotlight() {
                     src={
                       require("../assets/images/businessman-single.svg").default
                     }
+                    alt="businessman-image"
                   />
                 </MidRightImageContainer>
               </MidRightBox>
@@ -174,6 +198,7 @@ function Spotlight() {
 
           {/* middle section completed */}
 
+          {/* RightAside  section  */}
           <RightAside>
             <CartContainer>
               <CartLeft>
@@ -181,21 +206,27 @@ function Spotlight() {
                 <BellImageContainer>
                   <BellImage
                     src={require("../assets/images/bell.svg").default}
+                    alt="bell-image"
                   />
                 </BellImageContainer>
                 <MessageImageContainer>
                   <MessageImage
                     src={require("../assets/images/chat.svg").default}
+                    alt="message-image"
                   />
                 </MessageImageContainer>
               </CartLeft>
               <CartRight>
                 <BoyImageContainer>
-                  <BoyImage src={require("../assets/images/boy.jpg")} />
+                  <BoyImage
+                    src={require("../assets/images/boy.jpg")}
+                    alt="boy-image"
+                  />
                 </BoyImageContainer>
                 <CartArrowImageContainer>
                   <CartArrowImage
                     src={require("../assets/images/down-arrow.svg").default}
+                    alt="arrow-image"
                   />
                 </CartArrowImageContainer>
               </CartRight>
@@ -210,6 +241,7 @@ function Spotlight() {
                   <RightAsideImageBox>
                     <RightAsideImage
                       src={require("../assets/images/wood-books.jpg")}
+                      alt="game-image"
                     />
                   </RightAsideImageBox>
                   <RightItemDetailsBox>
@@ -228,6 +260,7 @@ function Spotlight() {
                   <RightAsideImageBox>
                     <RightAsideImage
                       src={require("../assets/images/black-box.jpg")}
+                      alt="black-box-image"
                     />
                   </RightAsideImageBox>
                   <RightItemDetailsBox>
@@ -246,6 +279,7 @@ function Spotlight() {
                   <RightAsideImageBox>
                     <RightAsideImage
                       src={require("../assets/images/speaker.jpg")}
+                      alt="speaker-image"
                     />
                   </RightAsideImageBox>
                   <RightItemDetailsBox>
@@ -264,6 +298,7 @@ function Spotlight() {
                   <RightAsideImageBox>
                     <RightAsideImage
                       src={require("../assets/images/headphones 1.jpg")}
+                      alt="headphones-image"
                     />
                   </RightAsideImageBox>
                   <RightItemDetailsBox>
@@ -284,6 +319,7 @@ function Spotlight() {
                       <RightAsideImageBox>
                         <RightAsideImage
                           src={require("../assets/images/radio.jpg")}
+                          alt="radio-image"
                         />
                       </RightAsideImageBox>
                       <RightItemDetailsBox>
@@ -310,17 +346,21 @@ function Spotlight() {
                   <CommentArrowContainer>
                     <CommentArrowImage
                       src={require("../assets/images/down-arrow2.svg").default}
+                      alt="down-arrow"
                     />
                   </CommentArrowContainer>
                 </CommentBox>
                 <ChatRightImageContainer>
                   <ChatRightImage
                     src={require("../assets/images/businessman-2.svg").default}
+                    alt="businessman"
                   />
                 </ChatRightImageContainer>
               </ChatContainer>
             </RightAsideBottomContainer>
           </RightAside>
+
+          {/* RightAside section completed */}
         </MainMiddleContainer>
       </SpotlightContainer>{" "}
     </>
@@ -540,6 +580,7 @@ const ArrowImage = styled.img`
 
 // LeftAside section completed//
 
+// main middle s section //
 const MainMiddleContainer = styled.div`
   width: 80%;
   display: flex;
@@ -1180,9 +1221,6 @@ const ProductRightHeading = styled.h4`
   @media all and (max-width: 980px) {
     display: none;
   }
-  /* @media all and (max-width: 768px) {
-    display: block;
-  } */
 `;
 
 const RightAsideItemContainer = styled.ul`
@@ -1205,7 +1243,7 @@ const RIghtItemContainer = styled.li`
   margin-bottom: 28px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   @media all and (max-width: 1280px) {
     margin-bottom: 30px;
@@ -1378,3 +1416,5 @@ const ChatRightImage = styled.img`
   width: 100%;
   display: block;
 `;
+
+// rightaside section completed //

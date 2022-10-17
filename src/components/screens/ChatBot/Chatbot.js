@@ -20,10 +20,19 @@ const Background = styled.div`
     top: 72px;
     left: 26px;
   }
-
-  @media all and (max-width: 768px) {
-    /* width: 491px;
-    height: 310px; */
+  @media all and (max-width: 640px) {
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    top: 257px;
+    left: 26px;
+  }
+  @media all and (max-width: 640px) {
+    width: 92%;
+    height: 28%;
+    position: absolute;
+    top: 257px;
+    left: 12px;
   }
 `;
 
@@ -48,6 +57,14 @@ const BotWrapper = styled.div`
     width: 491px;
     height: 310px;
   }
+  @media all and (max-width: 640px) {
+    width: 329px;
+    height: 241px;
+  }
+  @media all and (max-width: 360px) {
+    width: 275px;
+    height: 213px;
+  }
 `;
 
 const BotImg = styled.img`
@@ -69,12 +86,24 @@ const BotContent = styled.div`
     font-size: 40px;
     display: inline-block;
     font-weight: 700;
+
+    @media all and (max-width: 640px) {
+      margin-bottom: 0.1rem;
+      font-weight: 700;
+      font-size: 20px;
+    }
   }
 
   p {
     margin-bottom: 1rem;
     font-weight: 500;
     font-size: 16px;
+
+    @media all and (max-width: 640px) {
+      margin-bottom: 0.1rem;
+      font-weight: 500;
+      font-size: 12px;
+    }
   }
 
   button {
@@ -94,6 +123,17 @@ const BotContent = styled.div`
       color: #000;
       border: 2px solid #000;
     }
+
+    @media all and (max-width: 640px) {
+      margin-top: 5px;
+      padding: 8px 17px;
+      background: #141414;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      font-size: 10px;
+      border-radius: 10px;
+    }
   }
 `;
 
@@ -106,6 +146,11 @@ const CloseBotButton = styled(MdClose)`
   height: 32px;
   padding: 0;
   z-index: 10;
+
+  @media all and (max-width: 640px) {
+    top: 6px;
+    right: 6px;
+  }
 `;
 
 export const Chatbot = ({ showBot, setShowBot }) => {
